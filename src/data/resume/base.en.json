@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "about": "Frontend expert with over 15 years of experience. I specialise in the architecture of high-load SPA and SSR applications built with Vue 3 (Nuxt) and React (Next.js). I design products from scratch: from a design system in Figma to CI/CD setup and code review processes. I am looking for a developer role in a product company with a strong engineering culture.",
+  "keyTechnologies": [
+    "TypeScript",
+    "React 18+",
+    "Next.js",
+    "Vue 3",
+    "Nuxt 3",
+    "Pinia",
+    "Redux Toolkit",
+    "SSR/SSG",
+    "Webpack/Vite",
+    "Playwright",
+    "Docker",
+    "REST/WebSocket",
+    "AI Agents",
+    "MCP"
+  ],
+  "competencies": [
+    "Architecture design (SPA, SSR, SSG).",
+    "Migration of legacy code to modern stacks.",
+    "Performance engineering (Lighthouse, bundle optimisation).",
+    "Adoption of E2E testing (Playwright) in development pipelines.",
+    "Integration of AI tools (Claude, OpenAI, DeepSeek) into workflows."
+  ],
+  "experience": [
+    {
+      "id": "freelance",
+      "period": "2016 — present",
+      "company": "Freelance",
+      "role": "Front-end Developer",
+      "projects": [
+        {
+          "id": "skladolog",
+          "name": "Skladolog",
+          "description": "Warehouse management CRM",
+          "stack": [
+            "Vue 3",
+            "Pinia",
+            "TypeScript",
+            "Vite",
+            "Playwright"
+          ],
+          "achievements": [
+            "Designed the modular architecture from scratch.",
+            "Optimised rendering of tables with 10,000+ rows — interface response time reduced by 40%.",
+            "Introduced E2E testing (Playwright) into the CI/CD pipeline, cutting critical release bugs by 25%.",
+            "Built a dynamic module loading system that reduced the initial bundle size by 30%."
+          ]
+        },
+        {
+          "id": "fabrika-oteley",
+          "name": "Hotel Factory",
+          "description": "B2B supplier catalogue",
+          "stack": [
+            "Vue 3",
+            "Quasar (SSR)",
+            "TypeScript",
+            "Pinia"
+          ],
+          "achievements": [
+            "Delivered an SSR solution for SEO promotion of the catalogue.",
+            "Built a universal filtering system with dynamic parameters (up to 50+ filters at once) — user retention on the search page increased 1.5x (Yandex.Metrica data).",
+            "Configured page caching at the Nginx level, reducing TTFB by 60%."
+          ]
+        },
+        {
+          "id": "erp-wholesale",
+          "name": "ERP for wholesale sales",
+          "description": "B2B platform for managing wholesale sales",
+          "stack": [
+            "React",
+            "Zustand",
+            "Ant Design"
+          ],
+          "achievements": [
+            "Delivered the project from scratch — from application structure to the user flows for managing wholesale sales."
+          ]
+        },
+        {
+          "id": "crm-b2b-services",
+          "name": "B2B CRM for business services",
+          "description": "CRM platform for managing services for B2B clients",
+          "stack": [
+            "Nuxt 4",
+            "TypeScript",
+            "Vite",
+            "QML"
+          ],
+          "achievements": [
+            "Implemented several large project modules completely from scratch."
+          ]
+        },
+        {
+          "id": "corgi",
+          "name": "Corgi",
+          "description": "Browser extension for language learning",
+          "stack": [
+            "React",
+            "TypeScript",
+            "Webpack",
+            "Chrome Extensions API"
+          ],
+          "achievements": [
+            "Performed a full legacy refactor (plain JS → modular architecture on React + TypeScript).",
+            "Integrated speech synthesis (Web Speech API) and a contextual hint system based on word frequency.",
+            "Daily active users grew by 30% (internal analytics data)."
+          ]
+        },
+        {
+          "id": "chat-widget",
+          "name": "Internal CRM chat widget (MVP)",
+          "description": "Live chat widget with message history",
+          "stack": [
+            "React",
+            "WebSocket",
+            "Redux Toolkit",
+            "Docker"
+          ],
+          "achievements": [
+            "Built a widget with a live connection and message history.",
+            "Integrated it into the existing CRM in 2 weeks with zero downtime (feature flags and a staged rollout)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siplabs",
+      "period": "2014 — 2016",
+      "company": "SIPLABS Communications",
+      "role": "JavaScript Developer",
+      "achievements": [
+        "Developed the Monster UI VoIP application (WebRTC client).",
+        "Optimised audio stream handling, reducing data transfer latency during peak hours by 20%.",
+        "Contributed to the client architecture built on plain JS with a modular system."
+      ]
+    },
+    {
+      "id": "softomate",
+      "period": "2012 — 2014",
+      "company": "Softomate Company",
+      "role": "JavaScript Developer",
+      "achievements": [
+        "Built cross-browser extensions for business process automation (parsing, form autofill).",
+        "Developed an internal API for extensions that standardised the work of 3 development teams and accelerated new version releases by 40%."
+      ]
+    },
+    {
+      "id": "cft",
+      "period": "2010 — 2012",
+      "company": "CFT (Internet Banking Systems)",
+      "role": "Software Engineer",
+      "achievements": [
+        "Contributed to payment portals for banks with 50,000+ active users.",
+        "Created a library of reusable UI components on jQuery that accelerated new module development by 60% (feature delivery time reduced from 3 weeks to 1.5)."
+      ]
+    }
+  ],
+  "technicalStack": [
+    {
+      "id": "frameworks",
+      "label": "Frameworks / Core",
+      "items": [
+        "ES6+",
+        "TypeScript",
+        "React 18+ (Next.js 14+)",
+        "Vue 3 (Nuxt 3)",
+        "Vue 2 (optional)"
+      ]
+    },
+    {
+      "id": "state",
+      "label": "State management",
+      "items": [
+        "Pinia",
+        "Vuex",
+        "Redux Toolkit",
+        "RTK Query",
+        "React Query (TanStack)"
+      ]
+    },
+    {
+      "id": "styling",
+      "label": "Styling / UI",
+      "items": [
+        "Figma",
+        "SCSS/SASS",
+        "Tailwind CSS",
+        "Vuetify",
+        "Quasar",
+        "BEM",
+        "Flexbox/Grid"
+      ]
+    },
+    {
+      "id": "build",
+      "label": "Build / Infrastructure",
+      "items": [
+        "Webpack",
+        "Vite",
+        "Docker",
+        "Git (GitLab / GitHub)",
+        "Nginx (basic level)"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "items": [
+        "Playwright (E2E)",
+        "Jest (Unit)",
+        "Selenium (basic)"
+      ]
+    },
+    {
+      "id": "adjacent",
+      "label": "Adjacent technologies",
+      "items": [
+        "REST (Axios/Fetch)",
+        "WebSocket",
+        "PHP (Laravel/Yii2 — API understanding)",
+        "Python (Django — basic)"
+      ]
+    },
+    {
+      "id": "innovation",
+      "label": "Innovation",
+      "items": [
+        "Use of AI agents (Claude, DeepSeek, Big Pickle, etc.)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "NIEPP (Novosibirsk Institute of Economics, Psychology and Law)",
+      "specialty": "Applied Informatics",
+      "graduationYear": 2010
+    }
+  ],
+  "keyAchievements": [
+    "Architecture from scratch: built 10+ large projects through the full lifecycle.",
+    "Legacy migration: moved 2 projects from jQuery/plain JS to React and Vue while preserving business logic with zero downtime.",
+    "Performance: consistently work with Lighthouse and optimise bundles (code-splitting, tree-shaking, dynamic imports).",
+    "Quality: introduce E2E tests during development (Playwright) and run code reviews with checklists.",
+    "Mentoring: over the last 2 years helped 3 juniors reach the Middle level (regular 1:1s, pair programming).",
+    "CI/CD: set up pipelines in GitLab/GitHub Actions (build, tests, deploy)."
+  ],
+  "whyMe": [
+    "Ready-made architectural foundation — I use proven patterns (Feature-Sliced Design, modular approach), which halves the start time of a new project.",
+    "Quality at every stage — I write tests before the main code (TDD approach combined with Playwright).",
+    "Relieving the lead — I take on technical leadership of a direction, task distribution and mentoring of junior developers.",
+    "Flexibility — I switch easily between monoliths (WordPress / OpenCart) and modern isolated SPAs."
+  ],
+  "recommendations": [
+    "Contacts of previous tech leads and product managers are available on request.",
+    "Links to public work projects — provided in a direct message.",
+    "NDA projects — demonstrated only with the client's permission."
+  ]
+}

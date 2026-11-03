@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "name": {
+    "ru": "Константин Петров",
+    "en": "Konstantin Petrov"
+  },
+  "roles": {
+    "ru": [
+      "Senior Front-end Developer",
+      "Middle Front-end Developer",
+      "Tech Lead",
+      "UI-Architect"
+    ],
+    "en": [
+      "Senior Front-end Developer",
+      "Middle Front-end Developer",
+      "Tech Lead",
+      "UI Architect"
+    ]
+  },
+  "contacts": {
+    "phone": {
+      "value": "+79612265478",
+      "display": "+7 (961) 226-54-78",
+      "visible": true
+    },
+    "email": {
+      "value": "petrovmailme@yandex.ru",
+      "visible": true
+    },
+    "telegram": {
+      "handle": "@petrov4life",
+      "url": "https://t.me/petrov4life",
+      "visible": true
+    },
+    "location": {
+      "ru": "г. Новосибирск",
+      "en": "Novosibirsk, Russia"
+    },
+    "github": {
+      "label": "github.com/vbarkasov",
+      "url": "https://github.com/vbarkasov"
+    }
+  },
+  "photo": null,
+  "defaultLocale": "ru",
+  "locales": [
+    "ru",
+    "en"
+  ]
+}

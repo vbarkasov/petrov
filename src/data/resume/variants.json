@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "defaultLocale": "ru",
+  "variants": [
+    {
+      "id": "senior-frontend",
+      "order": 1,
+      "slug": "senior-frontend",
+      "title": {
+        "ru": "Senior Front-end Developer / UI-Architect",
+        "en": "Senior Front-end Developer / UI Architect"
+      },
+      "summary": {
+        "ru": "Frontend-эксперт с 15+ годами опыта. Проектирую архитектуру SPA и SSR на Vue 3 / Nuxt и React / Next.js, перевожу легаси на современный стек, выстраиваю CI/CD, E2E-тесты и код-ревью. Готов брать на себя техническое лидерство и менторство.",
+        "en": "Frontend expert with 15+ years of experience. I design SPA and SSR architectures with Vue 3 / Nuxt and React / Next.js, migrate legacy code to modern stacks, and establish CI/CD, E2E testing and code review. Ready to take on technical leadership and mentoring."
+      },
+      "focus": [
+        "architecture",
+        "legacy-migration",
+        "performance",
+        "quality",
+        "mentoring",
+        "ci-cd"
+      ],
+      "highlightProjects": [
+        "skladolog",
+        "fabrika-oteley",
+        "crm-b2b-services",
+        "corgi",
+        "chat-widget"
+      ],
+      "experienceOrder": [
+        "freelance",
+        "siplabs",
+        "softomate",
+        "cft"
+      ],
+      "skillsOrder": [
+        "frameworks",
+        "state",
+        "build",
+        "testing",
+        "styling",
+        "adjacent",
+        "innovation"
+      ],
+      "deEmphasize": []
+    },
+    {
+      "id": "middle-frontend",
+      "order": 2,
+      "slug": "middle-frontend",
+      "title": {
+        "ru": "Middle Front-end Developer",
+        "en": "Middle Front-end Developer"
+      },
+      "summary": {
+        "ru": "Front-end разработчик с широким практическим опытом. Сильная база в Vue 3 / Nuxt и React / Next.js, TypeScript и современных сборках. Реализую модули с нуля, покрываю критичные сценарии E2E-тестами и работаю в продуктовой команде по понятным инженерным процессам.",
+        "en": "Front-end developer with broad hands-on experience. Strong foundation in Vue 3 / Nuxt and React / Next.js, TypeScript and modern build tools. I deliver modules from scratch, cover critical flows with E2E tests and work within a product team using clear engineering processes."
+      },
+      "focus": [
+        "implementation",
+        "components",
+        "testing",
+        "teamwork",
+        "performance"
+      ],
+      "highlightProjects": [
+        "skladolog",
+        "fabrika-oteley",
+        "crm-b2b-services",
+        "corgi"
+      ],
+      "experienceOrder": [
+        "freelance",
+        "siplabs",
+        "softomate",
+        "cft"
+      ],
+      "skillsOrder": [
+        "frameworks",
+        "state",
+        "styling",
+        "testing",
+        "build",
+        "adjacent",
+        "innovation"
+      ],
+      "deEmphasize": [
+        "mentoring",
+        "tech-lead"
+      ]
+    },
+    {
+      "id": "middle-fullstack",
+      "order": 3,
+      "slug": "middle-fullstack",
+      "title": {
+        "ru": "Middle Full-stack Developer (Frontend-heavy)",
+        "en": "Middle Full-stack Developer (Frontend-heavy)"
+      },
+      "summary": {
+        "ru": "Full-stack разработчик с сильным frontend-ядром: Vue 3 / Nuxt и React / Next.js, TypeScript, REST и WebSocket. Базово работаю с PHP (Laravel/Yii2) и Python (Django) для интеграции с API. Реализую модули с нуля и связываю клиентскую часть с серверной.",
+        "en": "Full-stack developer with a strong frontend core: Vue 3 / Nuxt and React / Next.js, TypeScript, REST and WebSocket. I have a basic working knowledge of PHP (Laravel/Yii2) and Python (Django) for API integration. I deliver modules from scratch and connect the client side with the server side."
+      },
+      "focus": [
+        "frontend-core",
+        "api-integration",
+        "adjacent-backend",
+        "implementation",
+        "testing"
+      ],
+      "highlightProjects": [
+        "chat-widget",
+        "erp-wholesale",
+        "crm-b2b-services",
+        "skladolog"
+      ],
+      "experienceOrder": [
+        "freelance",
+        "siplabs",
+        "softomate",
+        "cft"
+      ],
+      "skillsOrder": [
+        "frameworks",
+        "state",
+        "adjacent",
+        "build",
+        "testing",
+        "styling",
+        "innovation"
+      ],
+      "deEmphasize": [
+        "mentoring",
+        "tech-lead"
+      ]
+    }
+  ]
+}

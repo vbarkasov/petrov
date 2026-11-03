@@ -1,0 +1,98 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getUI } from '../i18n';
+import { getProfile } from '../lib/data';
+import { pick } from '../lib/paths';
+import type { Locale } from '../types/content';
+
+interface Props {
+  locale: Locale;
+  title?: string;
+  description?: string;
+  jobTitle?: string;
+}
+
+const { locale, title, description, jobTitle } = Astro.props;
+const ui = getUI(locale);
+const profile = getProfile();
+const name = pick(profile.name, locale);
+const pageTitle = title ? `${title} — ${name}` : ui.meta.title;
+const metaDescription = description ?? ui.meta.description;
+
+const site = Astro.site ?? new URL('https://vbarkasov.github.io');
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const current = Astro.url.pathname;
+const other: Locale = locale === 'ru' ? 'en' : 'ru';
+const prefix = `${base}/${locale}`;
+const altPath = current.startsWith(prefix)
+  ? `${base}/${other}${current.slice(prefix.length)}`
+  : `${base}/${other}/`;
+
+const canonical = new URL(current, site);
+const alternate = new URL(altPath, site);
+const defaultUrl = new URL(`${base}/ru/`, site);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name,
+  jobTitle: jobTitle ?? profile.roles[locale][0],
+  url: canonical.href,
+  email: profile.contacts.email.visible ? `mailto:${profile.contacts.email.value}` : undefined,
+  telephone: profile.contacts.phone.visible ? profile.contacts.phone.value : undefined,
+  sameAs: [profile.contacts.github.url, profile.contacts.telegram.url],
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: pick(profile.contacts.location, locale),
+  },
+};
+---
+
+<!doctype html>
+<html lang={locale} class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={locale} href={canonical} />
+    <link rel="alternate" hreflang={other} href={alternate} />
+    <link rel="alternate" hreflang="x-default" href={defaultUrl} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <meta name="theme-color" content="#020617" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={name} />
+    <meta property="og:locale" content={locale === 'ru' ? 'ru_RU' : 'en_US'} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <script is:inline>
+      (() => {
+        const stored = localStorage.getItem('theme');
+        const dark = stored ? stored === 'dark' : true;
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-emerald-500 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-950"
+    >
+      {ui.labels.skipToContent}
+    </a>
+    <Header locale={locale} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </body>
+</html>

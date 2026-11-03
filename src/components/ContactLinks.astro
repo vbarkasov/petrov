@@ -1,0 +1,86 @@
+---
+import type { Locale } from '../types/content';
+import { getUI } from '../i18n';
+import { getProfile } from '../lib/data';
+import { pick } from '../lib/paths';
+
+interface Props {
+  locale: Locale;
+  compact?: boolean;
+}
+
+interface ContactItem {
+  label: string;
+  value: string;
+  href: string | null;
+  external?: boolean;
+}
+
+const { locale, compact = false } = Astro.props;
+const ui = getUI(locale);
+const { contacts } = getProfile();
+
+const items: ContactItem[] = [];
+
+if (contacts.phone.visible) {
+  items.push({
+    label: ui.labels.phone,
+    value: contacts.phone.display,
+    href: `tel:${contacts.phone.value}`,
+  });
+}
+
+if (contacts.email.visible) {
+  items.push({
+    label: ui.labels.email,
+    value: contacts.email.value,
+    href: `mailto:${contacts.email.value}`,
+  });
+}
+
+if (contacts.telegram.visible) {
+  items.push({
+    label: ui.labels.telegram,
+    value: contacts.telegram.handle,
+    href: contacts.telegram.url,
+    external: true,
+  });
+}
+
+items.push({
+  label: ui.labels.github,
+  value: contacts.github.label,
+  href: contacts.github.url,
+  external: true,
+});
+
+items.push({
+  label: ui.labels.location,
+  value: pick(contacts.location, locale),
+  href: null,
+});
+---
+
+<ul class:list={[{ 'gap-x-8': !compact, 'gap-x-5': compact }, 'flex flex-wrap gap-y-3']}>
+  {
+    items.map((item) => (
+      <li>
+        <span class="block text-[11px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          {item.label}
+        </span>
+        {item.href ? (
+          <a
+            href={item.href}
+            target={item.external ? '_blank' : undefined}
+            rel={item.external ? 'noreferrer' : undefined}
+            class="text-sm font-medium text-slate-700 underline-offset-4 transition hover:text-emerald-600 hover:underline dark:text-slate-200 dark:hover:text-emerald-400"
+          >
+            {item.value}
+          </a>
+        ) : (
+          <span class="text-sm font-medium text-slate-700 dark:text-slate-200">{item.value}</span>
+        )}
+      </li>
+    ))
+  }
+</ul>

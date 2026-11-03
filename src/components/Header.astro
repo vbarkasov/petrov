@@ -1,0 +1,67 @@
+---
+import type { Locale } from '../types/content';
+import { getUI } from '../i18n';
+import { getProfile } from '../lib/data';
+import { homePath, pick } from '../lib/paths';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import ThemeToggle from './ThemeToggle.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const ui = getUI(locale);
+const profile = getProfile();
+const home = homePath(locale);
+const name = pick(profile.name, locale);
+const initials = name
+  .split(/\s+/)
+  .map((part) => part[0])
+  .join('');
+
+const links = [
+  { href: home, label: ui.nav.portfolio, className: '' },
+  { href: `${home}#resumes`, label: ui.nav.resumes, className: '' },
+  { href: `${home}#projects`, label: ui.nav.projects, className: 'hidden md:inline-flex' },
+  { href: `${home}#contacts`, label: ui.nav.contacts, className: 'hidden sm:inline-flex' },
+];
+---
+
+<header
+  class="no-print sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/85 backdrop-blur dark:border-slate-800/80 dark:bg-slate-950/85"
+>
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a
+      href={home}
+      class="flex items-center gap-2 text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-500 dark:text-white"
+    >
+      <span
+        class="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500 text-sm font-bold text-slate-950"
+        aria-hidden="true">{initials}</span
+      >
+      <span class="hidden text-sm font-semibold sm:block">{name}</span>
+    </a>
+
+    <nav class="flex items-center gap-1 text-sm" aria-label={ui.nav.portfolio}>
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              'rounded-full px-3 py-1.5 text-slate-600 transition hover:bg-slate-200/70 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/70 dark:hover:text-white',
+              link.className,
+            ]}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <LanguageSwitcher locale={locale} />
+      <ThemeToggle locale={locale} />
+    </div>
+  </div>
+</header>

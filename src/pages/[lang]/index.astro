@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactLinks from '../../components/ContactLinks.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import ResumeCard from '../../components/ResumeCard.astro';
+import { getUI } from '../../i18n';
+import { getProfile, getResume, getVariants } from '../../lib/data';
+import { homePath, pick } from '../../lib/paths';
+import type { Locale } from '../../types/content';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'ru' } }, { params: { lang: 'en' } }];
+}
+
+const locale: Locale = Astro.params.lang === 'en' ? 'en' : 'ru';
+const ui = getUI(locale);
+const profile = getProfile();
+const resume = getResume(locale);
+const variants = getVariants();
+
+const name = pick(profile.name, locale);
+const roles = profile.roles[locale];
+const home = homePath(locale);
+const projects = resume.experience.flatMap((entry) => entry.projects ?? []);
+const initials = name
+  .split(/\s+/)
+  .map((part) => part[0])
+  .join('');
+---
+
+<BaseLayout locale={locale} description={resume.about}>
+  <section class="relative overflow-hidden border-b border-slate-200 dark:border-slate-800">
+    <div
+      class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.18),transparent_60%)] dark:bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.12),transparent_60%)]"
+    >
+    </div>
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+      <div class="grid items-start gap-10 md:grid-cols-[auto_1fr]">
+        <div
+          class="flex h-24 w-24 items-center justify-center rounded-3xl bg-emerald-500 text-3xl font-bold text-slate-950 shadow-lg shadow-emerald-500/20"
+          aria-hidden="true"
+        >
+          {initials}
+        </div>
+
+        <div>
+          <p
+            class="inline-flex items-center gap-2 rounded-full border border-emerald-300/70 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70"
+              ></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+            </span>
+            {ui.hero.available}
+          </p>
+
+          <p class="mt-6 text-sm uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+            {ui.hero.greeting}
+          </p>
+          <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">{name}</h1>
+          <p class="mt-4 text-lg font-medium text-slate-600 dark:text-slate-300">
+            {roles.join(' · ')}
+          </p>
+          <p class="mt-5 max-w-3xl text-base leading-relaxed text-slate-600 dark:text-slate-400">
+            {resume.about}
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href={`${home}#resumes`}
+              class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+            >
+              {ui.hero.ctaResumes}
+            </a>
+            <a
+              href={`${home}#contacts`}
+              class="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-emerald-400 hover:text-emerald-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-emerald-500 dark:hover:text-emerald-400"
+            >
+              {ui.hero.ctaContact}
+            </a>
+          </div>
+
+          <ul class="mt-8 flex flex-wrap gap-2" aria-label={ui.labels.keyTech}>
+            {
+              resume.keyTechnologies.map((tech) => (
+                <li class="rounded-lg border border-slate-200 bg-white/70 px-2.5 py-1 font-mono text-xs text-slate-700 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300">
+                  {tech}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.about}</h2>
+      <p class="mt-3 text-slate-600 dark:text-slate-400">{ui.sections.competencies}</p>
+    </div>
+
+    <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+      {
+        resume.competencies.map((item) => (
+          <li class="flex gap-3 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300">
+            <span class="mt-0.5 text-emerald-500 dark:text-emerald-400" aria-hidden="true">
+              ▸
+            </span>
+            <span>{item}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section
+    id="resumes"
+    class="border-y border-slate-200 bg-white/60 dark:border-slate-800 dark:bg-slate-900/30"
+  >
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.resumes}</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-400">{ui.resumeNote}</p>
+      </div>
+
+      <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {
+          variants.map((variant) => (
+            <ResumeCard variant={variant} locale={locale} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.projects}</h2>
+      <p class="mt-3 text-slate-600 dark:text-slate-400">{ui.labels.keyTech}</p>
+    </div>
+
+    <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {
+        projects.map((project) => (
+          <ProjectCard project={project} locale={locale} />
+        ))
+      }
+    </div>
+  </section>
+
+  <section
+    id="achievements"
+    class="border-y border-slate-200 bg-white/60 dark:border-slate-800 dark:bg-slate-900/30"
+  >
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.achievements}</h2>
+        <ul class="mt-6 space-y-3 text-sm text-slate-700 dark:text-slate-300">
+          {
+            resume.keyAchievements.map((item) => (
+              <li class="flex gap-3">
+                <span class="mt-1 text-emerald-500 dark:text-emerald-400" aria-hidden="true">
+                  ▸
+                </span>
+                <span>{item}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.whyMe}</h2>
+        <ol class="mt-6 space-y-3 text-sm text-slate-700 dark:text-slate-300">
+          {
+            resume.whyMe.map((item, index) => (
+              <li class="flex gap-3 rounded-xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
+                <span class="font-mono text-emerald-600 dark:text-emerald-400">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span>{item}</span>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div class="rounded-3xl border border-slate-200 bg-white p-8 dark:border-slate-800 dark:bg-slate-900/60 sm:p-10">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.contacts}</h2>
+      <p class="mt-3 max-w-2xl text-slate-600 dark:text-slate-400">{ui.contactIntro}</p>
+      <div class="mt-8">
+        <ContactLinks locale={locale} />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

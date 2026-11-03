@@ -1,0 +1,21 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const target = `${base}/ru/`;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={target} />
+    <title>Константин Петров</title>
+  </head>
+  <body>
+    <a href={target}>Константин Петров — портфолио</a>
+    <script is:inline define:vars={{ target }}>
+      window.location.replace(target);
+    </script>
+  </body>
+</html>

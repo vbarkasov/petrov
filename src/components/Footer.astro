@@ -1,0 +1,47 @@
+---
+import type { Locale } from '../types/content';
+import { getUI } from '../i18n';
+import { getProfile } from '../lib/data';
+import { homePath, pick } from '../lib/paths';
+import ContactLinks from './ContactLinks.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const ui = getUI(locale);
+const profile = getProfile();
+const home = homePath(locale);
+const year = new Date().getFullYear();
+---
+
+<footer class="no-print border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/40">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto]">
+    <div>
+      <p class="text-lg font-semibold text-slate-900 dark:text-white">{pick(profile.name, locale)}</p>
+      <p class="mt-2 max-w-md text-sm text-slate-600 dark:text-slate-400">{ui.contactIntro}</p>
+      <div class="mt-5">
+        <ContactLinks locale={locale} />
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2 text-sm text-slate-600 dark:text-slate-400">
+      <a href={home} class="transition hover:text-emerald-600 dark:hover:text-emerald-400">
+        {ui.nav.portfolio}
+      </a>
+      <a
+        href={profile.contacts.github.url}
+        target="_blank"
+        rel="noreferrer"
+        class="transition hover:text-emerald-600 dark:hover:text-emerald-400"
+      >
+        {ui.footer.sourceCode}
+      </a>
+      <span class="mt-4 text-xs text-slate-500 dark:text-slate-500">
+        {ui.footer.copyright.replace('{year}', String(year))}
+      </span>
+      <span class="text-xs text-slate-500 dark:text-slate-500">{ui.footer.builtWith}</span>
+    </div>
+  </div>
+</footer>
