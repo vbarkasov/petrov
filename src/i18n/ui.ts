@@ -17,12 +17,13 @@ export interface UI {
   sections: {
     about: string;
     resumes: string;
+    portfolio: string;
     achievements: string;
     whyMe: string;
     experience: string;
     education: string;
     contacts: string;
-    recommendations: string;
+    links: string;
     competencies: string;
     stack: string;
   };

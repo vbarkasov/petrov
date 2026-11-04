@@ -4,7 +4,7 @@ export const en: UI = {
   meta: {
     title: 'Konstantin Petrov — Senior Front-end Developer',
     description:
-      'Portfolio and resumes of Konstantin Petrov: Senior and Middle Front-end, Full-stack developer. Vue 3, Nuxt, React, Next.js, TypeScript, SPA and SSR architecture.',
+      'Portfolio and resumes of Konstantin Petrov: senior frontend developer with 16 years of experience. Vue 3, Nuxt, React, Next.js, TypeScript, SPA and SSR architecture. Remote, UTC+3.',
   },
   nav: {
     portfolio: 'Portfolio',
@@ -13,19 +13,20 @@ export const en: UI = {
   },
   hero: {
     greeting: "Hi, I'm",
-    available: 'Open to opportunities',
+    available: 'Open to opportunities · remote, UTC+3 (MSK)',
     ctaResumes: 'View resumes',
     ctaContact: 'Get in touch',
   },
   sections: {
     about: 'About',
     resumes: 'Resumes',
+    portfolio: 'Portfolio',
     achievements: 'Key achievements',
     whyMe: 'Why I strengthen your team',
     experience: 'Experience',
     education: 'Education',
     contacts: 'Contacts',
-    recommendations: 'References and portfolio',
+    links: 'Links and projects',
     competencies: 'Key competencies',
     stack: 'Technical stack',
   },
@@ -66,11 +67,11 @@ export const en: UI = {
   },
   variantDescriptions: {
     'senior-frontend':
-      'SPA and SSR architecture, legacy migrations, performance, mentoring and CI/CD.',
+      '16 years of experience: SPA and SSR architecture, legacy migrations, performance, mentoring and CI/CD.',
     'middle-frontend':
-      'Strong UI delivery with Vue and React, TypeScript, testing and teamwork.',
+      '16 years of experience: strong UI delivery with Vue and React, TypeScript, testing and teamwork.',
     'middle-fullstack':
-      'Frontend core plus API integration: REST, WebSocket, basic PHP and Python.',
+      '16 years of experience: frontend core plus API integration — REST, WebSocket, basic PHP and Python.',
   },
   focusLabels: {
     architecture: 'Architecture',
@@ -88,9 +89,10 @@ export const en: UI = {
     'adjacent-backend': 'Backend (basic)',
     'tech-lead': 'Tech lead',
   },
-  contactIntro: 'Open to opportunities and interesting projects.',
+  contactIntro:
+    'Open to opportunities and interesting projects. Work format — remote, UTC+3 (Moscow time).',
   resumeNote:
-    'This resume is generated from a single data source. Pick the variant that matches the level and role.',
+    'Three resume variants with a different emphasis: architecture and leadership, strong UI delivery, or frontend-heavy full-stack. All are based on the same experience — pick the one that fits your role.',
   notFound: {
     title: 'Page not found',
     text: 'The link may be outdated or contain a typo.',

@@ -4,7 +4,7 @@ export const ru: UI = {
   meta: {
     title: 'Константин Петров — Senior Front-end Developer',
     description:
-      'Портфолио и резюме Константина Петрова: Senior и Middle Front-end, Full-stack разработчик. Vue 3, Nuxt, React, Next.js, TypeScript, архитектура SPA и SSR.',
+      'Портфолио и резюме Константина Петрова: senior frontend-разработчик с 16-летним опытом. Vue 3, Nuxt, React, Next.js, TypeScript, архитектура SPA и SSR. Удалённо, UTC+3.',
   },
   nav: {
     portfolio: 'Портфолио',
@@ -13,19 +13,20 @@ export const ru: UI = {
   },
   hero: {
     greeting: 'Привет, я',
-    available: 'Открыт к предложениям',
+    available: 'Открыт к предложениям · удалённо, UTC+3 (МСК)',
     ctaResumes: 'Смотреть резюме',
     ctaContact: 'Связаться',
   },
   sections: {
     about: 'Обо мне',
     resumes: 'Резюме',
+    portfolio: 'Портфолио',
     achievements: 'Ключевые достижения',
     whyMe: 'Почему я — усиление для команды',
     experience: 'Опыт работы',
     education: 'Образование',
     contacts: 'Контакты',
-    recommendations: 'Рекомендации и портфолио',
+    links: 'Ссылки и проекты',
     competencies: 'Ключевые компетенции',
     stack: 'Технический стек',
   },
@@ -66,11 +67,11 @@ export const ru: UI = {
   },
   variantDescriptions: {
     'senior-frontend':
-      'Архитектура SPA и SSR, легаси-миграции, производительность, менторство и CI/CD.',
+      '16 лет опыта: архитектура SPA и SSR, легаси-миграции, производительность, менторство и CI/CD.',
     'middle-frontend':
-      'Сильная реализация интерфейсов на Vue и React, TypeScript, тесты и командная работа.',
+      '16 лет опыта: сильная реализация интерфейсов на Vue и React, TypeScript, тесты и командная работа.',
     'middle-fullstack':
-      'Frontend-ядро плюс интеграция с API: REST, WebSocket, базовые PHP и Python.',
+      '16 лет опыта: frontend-ядро плюс интеграция с API — REST, WebSocket, базовые PHP и Python.',
   },
   focusLabels: {
     architecture: 'Архитектура',
@@ -88,9 +89,10 @@ export const ru: UI = {
     'adjacent-backend': 'Backend (базово)',
     'tech-lead': 'Техлид',
   },
-  contactIntro: 'Открыт к предложениям и интересным проектам.',
+  contactIntro:
+    'Открыт к предложениям и интересным проектам. Формат работы — удалённо, UTC+3 (московское время).',
   resumeNote:
-    'Резюме собрано из единой базы данных. Выберите вариант подходящего уровня и роли.',
+    'Три варианта резюме с разным акцентом: архитектура и лидерство, сильная реализация интерфейсов или frontend-heavy full-stack. Все основаны на одном опыте — выбирайте подходящий под вакансию.',
   notFound: {
     title: 'Страница не найдена',
     text: 'Возможно, ссылка устарела или содержит опечатку.',

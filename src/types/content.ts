@@ -73,11 +73,16 @@ export interface PortfolioItem {
   title: LocalizedText;
   description: LocalizedText;
   features: LocalizedText[];
-  timeText: string;
+  timeText: LocalizedText;
   previewImage: string;
   images: string[];
   tags: string[];
   links?: PortfolioLink[];
+}
+
+export interface ResumeLink {
+  label: string;
+  url: string;
 }
 
 export interface ExperienceEntry {
@@ -112,7 +117,7 @@ export interface ResumeBase {
   education: EducationEntry[];
   keyAchievements: string[];
   whyMe: string[];
-  recommendations: string[];
+  links: ResumeLink[];
 }
 
 export interface ResumeVariant {

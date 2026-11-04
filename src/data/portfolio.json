@@ -13,7 +13,10 @@
         "en": "Inventory management CRM"
       },
       "features": [],
-      "timeText": "2024",
+      "timeText": {
+        "ru": "2024",
+        "en": "2024"
+      },
       "previewImage": "/static/portfolio/2024-skladolog/001.png",
       "images": [
         "/static/portfolio/2024-skladolog/001.png",
@@ -23,31 +26,30 @@
         "/static/portfolio/2024-skladolog/005.png"
       ],
       "tags": [
-        "vue",
-        "vue3",
-        "pinia",
-        "typescript",
-        "vite",
-        "playwright",
-        "crm",
-        "javascript",
-        "html",
-        "css"
+        "Vue 3",
+        "Pinia",
+        "TypeScript",
+        "Vite",
+        "Playwright",
+        "CRM"
       ]
     },
     {
       "id": "002",
       "slug": "online-exhibitions",
       "title": {
-        "ru": "Online exhibitions for the HORECA, spa and bath industry",
+        "ru": "Онлайн-выставки для HoReCa, spa и банной индустрии",
         "en": "Online exhibitions for the HORECA, spa and bath industry"
       },
       "description": {
-        "ru": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR)",
-        "en": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR)"
+        "ru": "Реализовал большую часть клиентской части приложения на Quasar (Vue 3 + SSR).",
+        "en": "Built most of the client side of the application with the Quasar framework (Vue 3 + SSR)."
       },
       "features": [],
-      "timeText": "2024",
+      "timeText": {
+        "ru": "2024",
+        "en": "2024"
+      },
       "previewImage": "/static/portfolio/2024-fabrika/001.png",
       "images": [
         "/static/portfolio/2024-fabrika/002.png",
@@ -58,30 +60,28 @@
         "/static/portfolio/2024-fabrika/007.png"
       ],
       "tags": [
-        "vue",
-        "vue3",
-        "quasar",
-        "ssr",
-        "composition-api",
-        "crm",
-        "javascript",
-        "html",
-        "css"
+        "Vue 3",
+        "Quasar",
+        "SSR",
+        "Composition API"
       ]
     },
     {
       "id": "003",
       "slug": "crm",
       "title": {
-        "ru": "CRM (customer relationship management)",
-        "en": "CRM (customer relationship management)"
+        "ru": "CRM-система для управления клиентами",
+        "en": "CRM system for customer management"
       },
       "description": {
-        "ru": "Implemented the entire client part of the application with the Quasar framework (Vue3)",
-        "en": "Implemented the entire client part of the application with the Quasar framework (Vue3)"
+        "ru": "Реализовал всю клиентскую часть приложения на Quasar (Vue 3).",
+        "en": "Built the entire client side of the application with the Quasar framework (Vue 3)."
       },
       "features": [],
-      "timeText": "2022",
+      "timeText": {
+        "ru": "2022",
+        "en": "2022"
+      },
       "previewImage": "/static/portfolio/2022-crm/000.png",
       "images": [
         "/static/portfolio/2022-crm/001.png",
@@ -93,29 +93,28 @@
         "/static/portfolio/2022-crm/007.png"
       ],
       "tags": [
-        "vue",
-        "vue3",
-        "quasar",
-        "composition-api",
-        "crm",
-        "javascript",
-        "html",
-        "css"
+        "Vue 3",
+        "Quasar",
+        "Composition API",
+        "CRM"
       ]
     },
     {
       "id": "004",
       "slug": "crm-chat",
       "title": {
-        "ru": "Chat for customer relationship management (CRM)",
-        "en": "Chat for customer relationship management (CRM)"
+        "ru": "Чат для CRM-системы",
+        "en": "Chat for a CRM system"
       },
       "description": {
-        "ru": "Fully featured chat for the CRM",
-        "en": "Fully featured chat for the CRM"
+        "ru": "Полнофункциональный чат для CRM-системы.",
+        "en": "Full-featured chat for a CRM."
       },
       "features": [],
-      "timeText": "2022",
+      "timeText": {
+        "ru": "2022",
+        "en": "2022"
+      },
       "previewImage": "/static/portfolio/2022-crm-chat/000.png",
       "images": [
         "/static/portfolio/2022-crm-chat/001.png",
@@ -125,55 +124,29 @@
         "/static/portfolio/2022-crm-chat/005.png"
       ],
       "tags": [
-        "vue",
-        "vue3",
-        "vuetify",
-        "composition-api",
-        "crm",
-        "javascript",
-        "html",
-        "css"
-      ]
-    },
-    {
-      "id": "005",
-      "slug": "bitcoin-exchange-service",
-      "title": {
-        "ru": "Bitcoin exchange service",
-        "en": "Bitcoin exchange service"
-      },
-      "description": {
-        "ru": "Web service for exchanging currencies and cryptocurrencies",
-        "en": "Web service for exchanging currencies and cryptocurrencies"
-      },
-      "features": [],
-      "timeText": "2021",
-      "previewImage": "/static/portfolio/2021-bitexchange/001.png",
-      "images": [
-        "/static/portfolio/2021-bitexchange/001.png"
-      ],
-      "tags": [
-        "bitexchange",
-        "exchange",
-        "vue",
-        "javascript",
-        "html",
-        "css"
+        "Vue 3",
+        "Vuetify",
+        "Composition API",
+        "WebSocket",
+        "CRM"
       ]
     },
     {
       "id": "006",
       "slug": "corgi-extension",
       "title": {
-        "ru": "Corgi browser extension",
-        "en": "Corgi browser extension"
+        "ru": "«Corgi» — расширение для изучения слов",
+        "en": "Corgi — vocabulary learning extension"
       },
       "description": {
-        "ru": "The browser extension allows you to learn foreign words when you surf the internet.",
-        "en": "The browser extension allows you to learn foreign words when you surf the internet."
+        "ru": "Браузерное расширение, которое помогает учить иностранные слова во время серфинга.",
+        "en": "Browser extension that helps you learn foreign words while browsing the web."
       },
       "features": [],
-      "timeText": "2022",
+      "timeText": {
+        "ru": "2022",
+        "en": "2022"
+      },
       "previewImage": "/static/portfolio/2022-corgi/000.png",
       "images": [
         "/static/portfolio/2022-corgi/001.png",
@@ -193,30 +166,28 @@
         "/static/portfolio/2022-corgi/015.png"
       ],
       "tags": [
-        "chrome",
-        "extension",
-        "javascript",
-        "html",
-        "css",
-        "translate",
-        "corgi",
-        "addon",
-        "browser"
+        "React",
+        "TypeScript",
+        "Webpack",
+        "Chrome Extensions API"
       ]
     },
     {
       "id": "007",
       "slug": "web-service-ads-telegram",
       "title": {
-        "ru": "A web service for managing ads in Telegram",
-        "en": "A web service for managing ads in Telegram"
+        "ru": "Сервис управления рекламой в Telegram",
+        "en": "Telegram ad management service"
       },
       "description": {
-        "ru": "Participated in the creation web service for managing ads in Telegram channels for administrators and advertisers.",
-        "en": "Participated in the creation web service for managing ads in Telegram channels for administrators and advertisers."
+        "ru": "Админ-панель для управления рекламными кампаниями в Telegram-каналах.",
+        "en": "Admin panel for managing ad campaigns in Telegram channels."
       },
       "features": [],
-      "timeText": "2022",
+      "timeText": {
+        "ru": "2021",
+        "en": "2021"
+      },
       "previewImage": "/static/portfolio/2021-admint/001.jpg",
       "images": [
         "/static/portfolio/2021-admint/001.jpg",
@@ -227,86 +198,85 @@
         "/static/portfolio/2021-admint/006.jpg"
       ],
       "tags": [
-        "vue",
-        "vuex",
-        "javascript",
-        "html",
-        "scss",
-        "telegram",
-        "ads"
+        "Vue",
+        "Vuex",
+        "SCSS",
+        "Telegram"
       ]
     },
     {
       "id": "008",
       "slug": "bitcoin-exchange-service",
       "title": {
-        "ru": "Web-service for exchanging currencies and cryptocurrencies",
-        "en": "Web-service for exchanging currencies and cryptocurrencies"
+        "ru": "Сервис обмена валют и криптовалют",
+        "en": "Currency and cryptocurrency exchange service"
       },
       "description": {
-        "ru": "The service allows you to quickly order the exchange of one currency for another. Exchange amounts are automatically calculated.",
-        "en": "The service allows you to quickly order the exchange of one currency for another. Exchange amounts are automatically calculated."
+        "ru": "Онлайн-сервис обмена валют и криптовалют с автоматическим расчётом суммы.",
+        "en": "Online service for exchanging currencies and cryptocurrencies with automatic amount calculation."
       },
       "features": [
         {
-          "ru": "Always up-to-date exchange rates",
+          "ru": "Актуальные курсы обмена",
           "en": "Always up-to-date exchange rates"
         },
         {
-          "ru": "Minimalistic design",
-          "en": "Minimalistic design"
+          "ru": "Минималистичный дизайн",
+          "en": "Minimalist design"
         },
         {
-          "ru": "Fast speed",
-          "en": "Fast speed"
+          "ru": "Высокая скорость",
+          "en": "Fast performance"
         },
         {
-          "ru": "User-friendly interface",
+          "ru": "Понятный интерфейс",
           "en": "User-friendly interface"
         }
       ],
-      "timeText": "2021",
+      "timeText": {
+        "ru": "2021",
+        "en": "2021"
+      },
       "previewImage": "/static/portfolio/2021-bitexchange/001.png",
       "images": [
         "/static/portfolio/2021-bitexchange/001.png"
       ],
       "tags": [
-        "vue",
-        "vuex",
-        "javascript",
-        "html",
-        "scss",
-        "bitcoin",
-        "cryptocurrency",
-        "exchange"
+        "Vue 2",
+        "Vuex",
+        "JavaScript",
+        "SCSS"
       ]
     },
     {
       "id": "009",
       "slug": "joxi-browser-extension",
       "title": {
-        "ru": "Joxi - browser extension for creating screenshots from pages",
-        "en": "Joxi - browser extension for creating screenshots from pages"
+        "ru": "Joxi — расширение для скриншотов",
+        "en": "Joxi — screenshot browser extension"
       },
       "description": {
-        "ru": "Tasks included redesigning the extension and adding new functionality",
-        "en": "Tasks included redesigning the extension and adding new functionality"
+        "ru": "Браузерное расширение для создания и редактирования скриншотов с сохранением в облако.",
+        "en": "Browser extension for creating and editing screenshots with cloud storage."
       },
       "features": [
         {
-          "ru": "taking screenshots from pages",
-          "en": "taking screenshots from pages"
+          "ru": "Создание скриншотов страниц",
+          "en": "Taking screenshots of pages"
         },
         {
-          "ru": "screenshot editing",
-          "en": "screenshot editing"
+          "ru": "Редактирование скриншотов",
+          "en": "Screenshot editing"
         },
         {
-          "ru": "saving screenshots to the cloud and hard drive",
-          "en": "saving screenshots to the cloud and hard drive"
+          "ru": "Сохранение в облако и на жёсткий диск",
+          "en": "Saving screenshots to the cloud and hard drive"
         }
       ],
-      "timeText": "2020",
+      "timeText": {
+        "ru": "2020",
+        "en": "2020"
+      },
       "previewImage": "/static/portfolio/2020-joxi/screen_preview.png",
       "images": [
         "/static/portfolio/2020-joxi/screen_001.png",
@@ -322,45 +292,42 @@
         "/static/portfolio/2020-joxi/screen_011.png"
       ],
       "tags": [
-        "chrome",
-        "firefox",
-        "opera",
-        "extension",
-        "javascript",
-        "html",
-        "css",
-        "joxi",
-        "capture",
-        "screen",
-        "screenshot"
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "JavaScript",
+        "Screenshots"
       ]
     },
     {
       "id": "010",
       "slug": "infinity-resources",
       "title": {
-        "ru": "Infinity Resources - Workforce management platform",
-        "en": "Infinity Resources - Workforce management platform"
+        "ru": "Infinity Resources — платформа управления персоналом",
+        "en": "Infinity Resources — workforce management platform"
       },
       "description": {
-        "ru": "Tasks included adding new features and fixing bugs.",
-        "en": "Tasks included adding new features and fixing bugs."
+        "ru": "Workforce management platform: доработка функций и исправление багов.",
+        "en": "Workforce management platform: feature development and bug fixing."
       },
       "features": [
         {
-          "ru": "interactive",
-          "en": "interactive"
+          "ru": "Интерактивные интерфейсы",
+          "en": "Interactive UI"
         },
         {
-          "ru": "adaptive",
-          "en": "adaptive"
+          "ru": "Адаптивная вёрстка",
+          "en": "Responsive layout"
         },
         {
-          "ru": "minimalistic design",
-          "en": "minimalistic design"
+          "ru": "Минималистичный дизайн",
+          "en": "Minimalist design"
         }
       ],
-      "timeText": "2019",
+      "timeText": {
+        "ru": "2019",
+        "en": "2019"
+      },
       "previewImage": "/static/portfolio/2019-infinity-resources/screen_preview.jpg",
       "images": [
         "/static/portfolio/2019-infinity-resources/screen_001.png",
@@ -369,47 +336,48 @@
         "/static/portfolio/2019-infinity-resources/screen_004.png"
       ],
       "tags": [
-        "vue",
-        "vuex",
-        "javascript",
-        "html",
-        "css"
+        "Vue 2",
+        "Vuex",
+        "JavaScript"
       ]
     },
     {
       "id": "011",
       "slug": "cashback-browser-extension",
       "title": {
-        "ru": "Cashback extension for browsers",
+        "ru": "Кэшбэк-расширение для браузеров",
         "en": "Cashback extension for browsers"
       },
       "description": {
-        "ru": "Cashback service that helps you make profitable purchases on the Internet",
-        "en": "Cashback service that helps you make profitable purchases on the Internet"
+        "ru": "Расширение для Chrome и Firefox: кэшбэк и купоны на партнёрских сайтах.",
+        "en": "Chrome and Firefox extension: cashback and coupons on partner sites."
       },
       "features": [
         {
-          "ru": "creates cashback on affilate sites",
-          "en": "creates cashback on affilate sites"
+          "ru": "Кэшбэк на партнёрских сайтах",
+          "en": "Cashback on affiliate sites"
         },
         {
-          "ru": "shows coupons on affiliate pages",
-          "en": "shows coupons on affiliate pages"
+          "ru": "Купоны на партнёрских страницах",
+          "en": "Coupons on affiliate pages"
         },
         {
-          "ru": "shows push-notifications",
-          "en": "shows push-notifications"
+          "ru": "Push-уведомления",
+          "en": "Push notifications"
         },
         {
-          "ru": "shows popup with list of affiliate sites",
-          "en": "shows popup with list of affiliate sites"
+          "ru": "Попап со списком партнёрских сайтов",
+          "en": "Popup with a list of affiliate sites"
         },
         {
-          "ru": "authorization",
-          "en": "authorization"
+          "ru": "Авторизация",
+          "en": "Authorization"
         }
       ],
-      "timeText": "2019",
+      "timeText": {
+        "ru": "2019",
+        "en": "2019"
+      },
       "previewImage": "/static/portfolio/2019-cashback-extension/screen_preview.jpg",
       "images": [
         "/static/portfolio/2019-cashback-extension/screen_001.png",
@@ -417,87 +385,85 @@
         "/static/portfolio/2019-cashback-extension/screen_003.png"
       ],
       "tags": [
-        "cashback",
-        "chrome",
-        "firefox",
-        "extension",
-        "addon",
-        "javascript",
-        "html",
-        "css"
+        "Chrome",
+        "Firefox",
+        "JavaScript",
+        "Cashback"
       ]
     },
     {
       "id": "012",
       "slug": "disallow-ads-vk-com",
       "title": {
-        "ru": "Disallow ads in site vk.com",
-        "en": "Disallow ads in site vk.com"
+        "ru": "Отключение рекламы во ВКонтакте",
+        "en": "Disallow ads on VK"
       },
       "description": {
-        "ru": "The extension for google chrome, which disallow ads in social network vk.com",
-        "en": "The extension for google chrome, which disallow ads in social network vk.com"
+        "ru": "Расширение для Chrome, которое скрывает рекламные баннеры, посты и аудиорекламу в VK.",
+        "en": "Chrome extension that hides ad banners, promoted posts and audio ads on VK."
       },
       "features": [
         {
-          "ru": "dissalow ads banners",
-          "en": "dissalow ads banners"
+          "ru": "Скрытие рекламных баннеров",
+          "en": "Hides ad banners"
         },
         {
-          "ru": "dissalow ads posts",
-          "en": "dissalow ads posts"
+          "ru": "Скрытие рекламных постов",
+          "en": "Hides promoted posts"
         },
         {
-          "ru": "dissalow ads audio",
-          "en": "dissalow ads audio"
+          "ru": "Скрытие аудиорекламы",
+          "en": "Hides audio ads"
         }
       ],
-      "timeText": "2018",
+      "timeText": {
+        "ru": "2018",
+        "en": "2018"
+      },
       "previewImage": "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
       "images": [
         "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
         "/static/portfolio/2018-ubrat-reklamu-vk/screen_002.png"
       ],
       "tags": [
-        "chrome",
-        "extension",
-        "javascript",
-        "html",
-        "css",
-        "vk",
-        "ads"
+        "Chrome",
+        "JavaScript",
+        "VK"
       ]
     },
     {
       "id": "013",
       "slug": "child-products-statistics",
       "title": {
-        "ru": "Statistics website of children's goods",
-        "en": "Statistics website of children's goods"
+        "ru": "Статистика детских товаров",
+        "en": "Children's goods statistics"
       },
       "description": {
-        "ru": "The website with statistical data of children's goods with graphs",
-        "en": "The website with statistical data of children's goods with graphs"
+        "ru": "Сайт со статистикой детских товаров: интерактивные графики и срезы по категориям.",
+        "en": "Statistics website for children's goods with interactive charts and category breakdowns."
       },
       "features": [
         {
-          "ru": "beautiful graphs",
-          "en": "beautiful graphs"
+          "ru": "Наглядные графики",
+          "en": "Clear charts"
         },
         {
-          "ru": "interactive",
-          "en": "interactive"
+          "ru": "Интерактивная фильтрация",
+          "en": "Interactive filtering"
         },
         {
-          "ru": "adaptive view",
-          "en": "adaptive view"
+          "ru": "Адаптивный интерфейс",
+          "en": "Responsive UI"
         },
         {
-          "ru": "minimalistic design",
-          "en": "minimalistic design"
+          "ru": "Минималистичный дизайн",
+          "en": "Minimalist design"
         }
       ],
-      "timeText": "October 2018",
+      "timeText": {
+        "ru": "Октябрь 2018",
+        "en": "October 2018"
+      },
       "previewImage": "/static/portfolio/2018-child-products/screen_preview.png",
       "images": [
         "/static/portfolio/2018-child-products/screen_001.png",
@@ -505,12 +471,10 @@
         "/static/portfolio/2018-child-products/screen_003.png"
       ],
       "tags": [
-        "vue",
-        "vuex",
-        "vuetify",
-        "javascript",
-        "html",
-        "css"
+        "Vue 2",
+        "Vuex",
+        "Vuetify",
+        "Data visualization"
       ],
       "links": [
         {
@@ -527,36 +491,39 @@
       "id": "014",
       "slug": "vbarkasov-portfolio-site",
       "title": {
-        "ru": "Portfolio site",
-        "en": "Portfolio site"
+        "ru": "Сайт-портфолио",
+        "en": "Portfolio website"
       },
       "description": {
-        "ru": "The portfolio site of web developer",
-        "en": "The portfolio site of web developer"
+        "ru": "Портфолио веб-разработчика: галерея проектов и резюме.",
+        "en": "Web developer portfolio: project gallery and resume."
       },
       "features": [
         {
-          "ru": "fast",
-          "en": "fast"
+          "ru": "Быстрая загрузка",
+          "en": "Fast loading"
         },
         {
-          "ru": "simple",
-          "en": "simple"
+          "ru": "Простая структура",
+          "en": "Simple structure"
         },
         {
-          "ru": "convenient",
-          "en": "convenient"
+          "ru": "Удобная навигация",
+          "en": "Convenient navigation"
         },
         {
-          "ru": "adaptive view",
-          "en": "adaptive view"
+          "ru": "Адаптивная вёрстка",
+          "en": "Responsive layout"
         },
         {
-          "ru": "minimalistic design",
-          "en": "minimalistic design"
+          "ru": "Минималистичный дизайн",
+          "en": "Minimalist design"
         }
       ],
-      "timeText": "August 2018",
+      "timeText": {
+        "ru": "Август 2018",
+        "en": "August 2018"
+      },
       "previewImage": "/static/portfolio/2018-portfolio-site/screen_001.png",
       "images": [
         "/static/portfolio/2018-portfolio-site/screen_001.png",
@@ -565,15 +532,13 @@
         "/static/portfolio/2018-portfolio-site/screen_004.png"
       ],
       "tags": [
-        "vue",
-        "vuex",
-        "javascript",
-        "html",
-        "css"
+        "Vue 2",
+        "Vuex",
+        "JavaScript"
       ],
       "links": [
         {
-          "title": "Source code in Github",
+          "title": "GitHub",
           "href": "https://github.com/vbarkasov/vbarkasov-portfolio-vue",
           "icon": [
             "fab",
@@ -586,66 +551,66 @@
       "id": "015",
       "slug": "monster-ui-addressbooks",
       "title": {
-        "ru": "Address Books",
-        "en": "Address Books"
+        "ru": "Address Books для Monster UI",
+        "en": "Address Books for Monster UI"
       },
       "description": {
-        "ru": "SIP-application for Monster UI framework",
-        "en": "SIP-application for Monster UI framework"
+        "ru": "SIP-приложение с адресными книгами для фреймворка Monster UI.",
+        "en": "SIP application with address books for the Monster UI framework."
       },
       "features": [
         {
-          "ru": "Address books management",
-          "en": "Address books management"
+          "ru": "Управление адресными книгами",
+          "en": "Address book management"
         }
       ],
-      "timeText": "February 2018",
+      "timeText": {
+        "ru": "Февраль 2018",
+        "en": "February 2018"
+      },
       "previewImage": "/static/portfolio/2018-monster-ui-addressbooks/screen001_preview.png",
       "images": [
         "/static/portfolio/2018-monster-ui-addressbooks/screen001.png"
       ],
       "tags": [
-        "monster-ui",
-        "addressbooks",
-        "sip",
-        "javascript",
-        "html",
-        "css"
+        "Monster UI",
+        "SIP",
+        "JavaScript"
       ]
     },
     {
       "id": "016",
       "slug": "kinopoisk-torrent-search",
       "title": {
-        "ru": "Browser extension for search torrents",
-        "en": "Browser extension for search torrents"
+        "ru": "Поиск торрентов на Кинопоиске",
+        "en": "Kinopoisk torrent search"
       },
       "description": {
-        "ru": "This extension adds T-button near title of film in site kinopoisk.ru",
-        "en": "This extension adds T-button near title of film in site kinopoisk.ru"
+        "ru": "Расширение добавляет кнопку поиска торрентов рядом с названием фильма на kinopoisk.ru.",
+        "en": "The extension adds a torrent search button next to a movie title on kinopoisk.ru."
       },
       "features": [
         {
-          "ru": "Fast search torrents",
-          "en": "Fast search torrents"
+          "ru": "Быстрый поиск торрентов",
+          "en": "Fast torrent search"
         }
       ],
-      "timeText": "2017",
+      "timeText": {
+        "ru": "2017",
+        "en": "2017"
+      },
       "previewImage": "/static/portfolio/2017-kinopoisk-torrent-search/screen.png",
       "images": [
         "/static/portfolio/2017-kinopoisk-torrent-search/screen.png"
       ],
       "tags": [
-        "chrome",
-        "extension",
-        "javascript",
-        "html",
-        "css",
-        "torrent"
+        "Chrome",
+        "JavaScript",
+        "Browser extension"
       ],
       "links": [
         {
-          "title": "Source code in Github",
+          "title": "GitHub",
           "href": "https://github.com/vbarkasov/kinopoisk-torrent-search",
           "icon": [
             "fab",
@@ -653,7 +618,7 @@
           ]
         },
         {
-          "title": "This extension in Google Store",
+          "title": "Chrome Web Store",
           "href": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld",
           "icon": [
             "fab",
@@ -666,28 +631,31 @@
       "id": "017",
       "slug": "bitcoin-browser-extension",
       "title": {
-        "ru": "Bitcoin Browser Extension",
-        "en": "Bitcoin Browser Extension"
+        "ru": "Bitcoin-расширение для браузера",
+        "en": "Bitcoin browser extension"
       },
       "description": {
-        "ru": "Browser extension for Google Chrome and Firefox.",
-        "en": "Browser extension for Google Chrome and Firefox."
+        "ru": "Расширение для Chrome и Firefox: курс биткоина, график и калькулятор валют.",
+        "en": "Chrome and Firefox extension: Bitcoin rate, chart and currency calculator."
       },
       "features": [
         {
-          "ru": "Displays graph of currency rate for the selected period",
-          "en": "Displays graph of currency rate for the selected period"
+          "ru": "График курса за выбранный период",
+          "en": "Currency rate chart for the selected period"
         },
         {
-          "ru": "Allows you to calculate the price of one currency in another (currency calculator)",
-          "en": "Allows you to calculate the price of one currency in another (currency calculator)"
+          "ru": "Калькулятор валют",
+          "en": "Currency calculator"
         },
         {
-          "ru": "Displays on the icon the current bitcoin rate in one of the 20 currencies of the world",
-          "en": "Displays on the icon the current bitcoin rate in one of the 20 currencies of the world"
+          "ru": "Курс биткоина в 20 валютах мира на иконке",
+          "en": "Bitcoin rate in 20 world currencies on the icon"
         }
       ],
-      "timeText": "May 2017",
+      "timeText": {
+        "ru": "Май 2017",
+        "en": "May 2017"
+      },
       "previewImage": "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
       "images": [
         "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
@@ -695,97 +663,101 @@
         "/static/portfolio/2017-bitcoin-browser-extension/screen003.png"
       ],
       "tags": [
-        "chrome",
-        "extension",
-        "javascript",
-        "html",
-        "css"
+        "Chrome",
+        "Firefox",
+        "JavaScript",
+        "Bitcoin"
       ]
     },
     {
       "id": "018",
       "slug": "alfa-bank-jbzoo-payment-module",
       "title": {
-        "ru": "Alfa Bank JBZoo payment module for Joomla 3",
-        "en": "Alfa Bank JBZoo payment module for Joomla 3"
+        "ru": "Модуль оплаты Alfa Bank для Joomla 3",
+        "en": "Alfa Bank payment module for Joomla 3"
       },
       "description": {
-        "ru": "Payment module for JBZoo component of CMS Joomla 3",
-        "en": "Payment module for JBZoo component of CMS Joomla 3"
+        "ru": "Платёжный модуль для компонента JBZoo в CMS Joomla 3.",
+        "en": "Payment module for the JBZoo component in Joomla 3."
       },
       "features": [
         {
-          "ru": "Allows paying in an online store via Alfa Bank",
-          "en": "Allows paying in an online store via Alfa Bank"
+          "ru": "Оплата в интернет-магазине через Альфа-Банк",
+          "en": "Online store payments via Alfa Bank"
         }
       ],
-      "timeText": "July 2016",
+      "timeText": {
+        "ru": "Июль 2016",
+        "en": "July 2016"
+      },
       "previewImage": "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
       "images": [
         "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
         "/static/portfolio/2016-alfabank-jbzoo-payment-module/screen_01.png"
       ],
       "tags": [
-        "php",
-        "jbzoo",
-        "joomla",
-        "alfabank",
-        "ecommerce",
-        "module"
+        "PHP",
+        "JBZoo",
+        "Joomla",
+        "E-commerce"
       ]
     },
     {
       "id": "019",
       "slug": "admin-interface-ecommerce-site",
       "title": {
-        "ru": "Admin Interface for ecommerce site",
-        "en": "Admin Interface for ecommerce site"
+        "ru": "Админ-интерфейс интернет-магазина",
+        "en": "Admin interface for an e-commerce site"
       },
       "description": {
-        "ru": "I made custom user interface for ecommerce site",
-        "en": "I made custom user interface for ecommerce site"
+        "ru": "Кастомный интерфейс управления заказами для интернет-магазина.",
+        "en": "Custom order management interface for an e-commerce site."
       },
       "features": [
         {
-          "ru": "two column view",
-          "en": "two column view"
+          "ru": "Двухколоночный интерфейс",
+          "en": "Two-column layout"
         },
         {
-          "ru": "tabs orders",
-          "en": "tabs orders"
+          "ru": "Вкладки заказов",
+          "en": "Order tabs"
         },
         {
-          "ru": "calculate total sum",
-          "en": "calculate total sum"
+          "ru": "Расчёт итоговой суммы",
+          "en": "Order total calculation"
         }
       ],
-      "timeText": "2016",
+      "timeText": {
+        "ru": "2016",
+        "en": "2016"
+      },
       "previewImage": "/static/portfolio/2016-magix-admin-ui/001.png",
       "images": [
         "/static/portfolio/2016-magix-admin-ui/001.png"
       ],
       "tags": [
-        "yii2",
-        "ecommerce",
-        "php",
-        "javascript",
-        "html",
-        "css"
+        "Yii2",
+        "PHP",
+        "JavaScript",
+        "E-commerce"
       ]
     },
     {
       "id": "020",
       "slug": "change-design-ecommerce-site-ocean-krasoty",
       "title": {
-        "ru": "Change design of ecommerce site",
-        "en": "Change design of ecommerce site"
+        "ru": "Редизайн интернет-магазина Ocean Krasoty",
+        "en": "Redesign of the Ocean Krasoty online store"
       },
       "description": {
-        "ru": "Change design of ecommerce site Ocean Krasoty",
-        "en": "Change design of ecommerce site Ocean Krasoty"
+        "ru": "Обновление дизайна интернет-магазина косметики.",
+        "en": "Design refresh for a cosmetics online store."
       },
       "features": [],
-      "timeText": "2016",
+      "timeText": {
+        "ru": "2016",
+        "en": "2016"
+      },
       "previewImage": "/static/portfolio/2016-ocean/preview.jpg",
       "images": [
         "/static/portfolio/2016-ocean/preview.jpg",
@@ -794,10 +766,10 @@
         "/static/portfolio/2016-ocean/003.jpg"
       ],
       "tags": [
-        "netcat",
-        "php",
-        "html",
-        "css"
+        "Netcat",
+        "PHP",
+        "HTML",
+        "CSS"
       ]
     }
   ]

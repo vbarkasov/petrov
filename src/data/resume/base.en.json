@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "en",
-  "about": "Frontend expert with over 15 years of experience. I specialise in the architecture of high-load SPA and SSR applications built with Vue 3 (Nuxt) and React (Next.js). I design products from scratch: from a design system in Figma to CI/CD setup and code review processes. I am looking for a developer role in a product company with a strong engineering culture.",
+  "about": "Frontend developer with 16 years of commercial experience (since 2010). I design SPA and SSR applications with Vue 3 (Nuxt) and React (Next.js), migrate legacy code to modern stacks, and set up CI/CD, E2E testing and code review. Experience in internet banking (50,000+ active users), VoIP/WebRTC, CRM/ERP, e-commerce and browser extensions. Work format — remote, UTC+3 (Moscow time).",
   "keyTechnologies": [
     "TypeScript",
     "React 18+",
@@ -19,24 +19,23 @@
     "MCP"
   ],
   "competencies": [
-    "Architecture design (SPA, SSR, SSG).",
-    "Migration of legacy code to modern stacks.",
-    "Performance engineering (Lighthouse, bundle optimisation).",
-    "Adoption of E2E testing (Playwright) in development pipelines.",
-    "Integration of AI tools (Claude, OpenAI, DeepSeek) into workflows.",
-    "Using AI agents (Claude Code, Cursor, DeepSeek Coder, Copilot) to accelerate the SDLC: refactoring legacy code, generating and covering with tests, debugging, documentation generation, automated code review, and exploring solutions in Vibe Coding mode."
+    "SPA, SSR and SSG architecture with Vue 3 (Nuxt) and React (Next.js), TypeScript.",
+    "Performance: Lighthouse and Core Web Vitals, code splitting, Nginx caching — TTFB −60%, initial bundle −30%, table response time −40%.",
+    "Release quality: Playwright E2E in CI/CD and checklist-based code review — 25% fewer critical bugs.",
+    "Legacy migration: moved Corgi from plain JavaScript to React + TypeScript with zero downtime.",
+    "AI-assisted development: Claude Code, Cursor, Copilot, DeepSeek — refactoring, tests and documentation."
   ],
   "experience": [
     {
       "id": "freelance",
       "period": "2016 — present",
       "company": "Freelance",
-      "role": "Front-end Developer",
+      "role": "Front-end developer",
       "projects": [
         {
           "id": "skladolog",
           "name": "Skladolog",
-          "description": "Warehouse management CRM",
+          "description": "Inventory management CRM",
           "stack": [
             "Vue 3",
             "Pinia",
@@ -45,10 +44,11 @@
             "Playwright"
           ],
           "achievements": [
-            "Designed the modular architecture from scratch.",
-            "Optimised rendering of tables with 10,000+ rows — interface response time reduced by 40%.",
-            "Introduced E2E testing (Playwright) into the CI/CD pipeline, cutting critical release bugs by 25%.",
-            "Built a dynamic module loading system that reduced the initial bundle size by 30%."
+            "Designed the modular application architecture from scratch.",
+            "Optimised table rendering for 10,000+ rows — interface response time reduced by 40%.",
+            "Introduced Playwright E2E testing into the CI/CD pipeline — 25% fewer critical bugs in releases.",
+            "Built a dynamic module loading system that reduced the initial bundle by 30%.",
+            "Mentored junior developers: 1:1s, pair programming, code review."
           ],
           "previewImage": "/static/portfolio/2024-skladolog/001.png",
           "images": [
@@ -61,8 +61,8 @@
         },
         {
           "id": "fabrika-oteley",
-          "name": "Hotel Factory",
-          "description": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR).",
+          "name": "Fabrika Oteley",
+          "description": "Built most of the client side with the Quasar framework (Vue 3 + SSR).",
           "stack": [
             "Vue 3",
             "Quasar (SSR)",
@@ -71,8 +71,8 @@
           ],
           "achievements": [
             "Delivered an SSR solution for SEO promotion of the catalogue.",
-            "Built a universal filtering system with dynamic parameters (up to 50+ filters at once) — user retention on the search page increased 1.5x (Yandex.Metrica data).",
-            "Configured page caching at the Nginx level, reducing TTFB by 60%."
+            "Built a universal filtering system with dynamic parameters (up to 50+ filters at once) — user retention on the search page grew 1.5× (Yandex.Metrica data).",
+            "Set up page caching at the Nginx level, cutting TTFB by 60%."
           ],
           "previewImage": "/static/portfolio/2024-fabrika/001.png",
           "images": [
@@ -87,7 +87,7 @@
         },
         {
           "id": "erp-wholesale",
-          "name": "ERP for wholesale sales",
+          "name": "ERP system for wholesale sales",
           "description": "B2B platform for managing wholesale sales",
           "stack": [
             "React",
@@ -95,13 +95,14 @@
             "Ant Design"
           ],
           "achievements": [
-            "Delivered the project from scratch — from application structure to the user flows for managing wholesale sales."
+            "Delivered the project from scratch — from application structure to wholesale sales management flows.",
+            "Designed the component architecture with React, Zustand and Ant Design."
           ]
         },
         {
           "id": "crm-b2b-services",
-          "name": "B2B CRM for business services",
-          "description": "Customer Relationship Management (CRM) is a system used to manage customer interactions and data.",
+          "name": "CRM for B2B service management",
+          "description": "CRM for managing B2B customer services",
           "stack": [
             "Nuxt 4",
             "TypeScript",
@@ -109,7 +110,8 @@
             "QML"
           ],
           "achievements": [
-            "Implemented several large project modules completely from scratch."
+            "Built several large modules from scratch: data structure, interface and API integration.",
+            "Worked with the Nuxt 4, TypeScript and Vite stack."
           ],
           "previewImage": "/static/portfolio/2022-crm/000.png",
           "images": [
@@ -125,7 +127,7 @@
         {
           "id": "corgi",
           "name": "Corgi",
-          "description": "The browser extension allows you to learn foreign words when you surf the internet.",
+          "description": "Browser extension for learning foreign words while browsing the web",
           "stack": [
             "React",
             "TypeScript",
@@ -133,7 +135,7 @@
             "Chrome Extensions API"
           ],
           "achievements": [
-            "Performed a full legacy refactor (plain JS → modular architecture on React + TypeScript).",
+            "Performed a full legacy refactor (plain JavaScript → modular architecture on React + TypeScript).",
             "Integrated speech synthesis (Web Speech API) and a contextual hint system based on word frequency.",
             "Daily active users grew by 30% (internal analytics data)."
           ],
@@ -158,8 +160,8 @@
         },
         {
           "id": "chat-widget",
-          "name": "Internal CRM chat widget (MVP)",
-          "description": "Fully featured chat for the CRM",
+          "name": "Internal chat widget for CRM",
+          "description": "Chat with a live connection and message history",
           "stack": [
             "React",
             "WebSocket",
@@ -167,8 +169,8 @@
             "Docker"
           ],
           "achievements": [
-            "Built a widget with a live connection and message history.",
-            "Integrated it into the existing CRM in 2 weeks with zero downtime (feature flags and a staged rollout)."
+            "Built the widget with a live connection and message history.",
+            "Integrated it into the existing CRM in 2 weeks with zero downtime (feature flags and a phased rollout)."
           ],
           "previewImage": "/static/portfolio/2022-crm-chat/000.png",
           "images": [
@@ -177,6 +179,63 @@
             "/static/portfolio/2022-crm-chat/003.png",
             "/static/portfolio/2022-crm-chat/004.png",
             "/static/portfolio/2022-crm-chat/005.png"
+          ]
+        },
+        {
+          "id": "infinity-resources",
+          "name": "Infinity Resources",
+          "description": "Workforce management platform: new features and bug fixes",
+          "stack": [
+            "Vue",
+            "Vuex",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Developed the workforce management platform on Vue and Vuex: new features and bug fixes.",
+            "Owned responsiveness and interactivity of the key screens."
+          ],
+          "previewImage": "/static/portfolio/2019-infinity-resources/screen_preview.jpg",
+          "images": [
+            "/static/portfolio/2019-infinity-resources/screen_001.png",
+            "/static/portfolio/2019-infinity-resources/screen_002.png",
+            "/static/portfolio/2019-infinity-resources/screen_003.png",
+            "/static/portfolio/2019-infinity-resources/screen_004.png"
+          ]
+        },
+        {
+          "id": "joxi-browser-extension",
+          "name": "Joxi",
+          "description": "Browser extension for creating and editing screenshots",
+          "stack": [
+            "Chrome",
+            "Firefox",
+            "Opera",
+            "Extension",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Screenshot"
+          ],
+          "achievements": [
+            "Redesigned the extension for Chrome, Firefox and Opera.",
+            "Implemented screenshot creation and editing.",
+            "Added saving screenshots to the cloud and to the hard drive."
+          ],
+          "previewImage": "/static/portfolio/2020-joxi/screen_preview.png",
+          "images": [
+            "/static/portfolio/2020-joxi/screen_001.png",
+            "/static/portfolio/2020-joxi/screen_002.png",
+            "/static/portfolio/2020-joxi/screen_003.png",
+            "/static/portfolio/2020-joxi/screen_004.png",
+            "/static/portfolio/2020-joxi/screen_005.png",
+            "/static/portfolio/2020-joxi/screen_006.png",
+            "/static/portfolio/2020-joxi/screen_007.png",
+            "/static/portfolio/2020-joxi/screen_008.png",
+            "/static/portfolio/2020-joxi/screen_009.png",
+            "/static/portfolio/2020-joxi/screen_010.png",
+            "/static/portfolio/2020-joxi/screen_011.png"
           ]
         }
       ]
@@ -187,9 +246,9 @@
       "company": "SIPLABS Communications",
       "role": "JavaScript Developer",
       "achievements": [
-        "Developed the Monster UI VoIP application (WebRTC client).",
-        "Optimised audio stream handling, reducing data transfer latency during peak hours by 20%.",
-        "Contributed to the client architecture built on plain JS with a modular system."
+        "Team of 10+: developed the Monster UI VoIP application (WebRTC client).",
+        "Optimised audio stream handling, cutting data transfer latency during peak hours by 20%.",
+        "Contributed to the client architecture in plain JavaScript with a modular system."
       ]
     },
     {
@@ -198,18 +257,18 @@
       "company": "Softomate Company",
       "role": "JavaScript Developer",
       "achievements": [
-        "Built cross-browser extensions for business process automation (parsing, form autofill).",
-        "Developed an internal API for extensions that standardised the work of 3 development teams and accelerated new version releases by 40%."
+        "Team of 15+: built cross-browser extensions for business process automation (parsing, form autofill).",
+        "Developed an internal API for extensions that standardised the work of 3 development teams and sped up releases by 40%."
       ]
     },
     {
       "id": "cft",
       "period": "2010 — 2012",
-      "company": "CFT (Internet Banking Systems)",
+      "company": "CFT (Internet banking systems)",
       "role": "Software Engineer",
       "achievements": [
-        "Contributed to payment portals for banks with 50,000+ active users.",
-        "Created a library of reusable UI components on jQuery that accelerated new module development by 60% (feature delivery time reduced from 3 weeks to 1.5)."
+        "Company of 1,500+ employees: contributed to payment dashboards for banks with 50,000+ active users.",
+        "Built a reusable jQuery UI component library that sped up new module development by 60% (feature delivery went from 3 weeks to 1.5)."
       ]
     }
   ],
@@ -222,7 +281,7 @@
         "TypeScript",
         "React 18+ (Next.js 14+)",
         "Vue 3 (Nuxt 3)",
-        "Vue 2 (optional)"
+        "Vue 2 (Options API)"
       ]
     },
     {
@@ -257,7 +316,9 @@
         "Vite",
         "Docker",
         "Git (GitLab / GitHub)",
-        "Nginx (basic level)"
+        "GitHub Actions",
+        "GitLab CI",
+        "Nginx (basic)"
       ]
     },
     {
@@ -281,36 +342,49 @@
     },
     {
       "id": "innovation",
-      "label": "Innovation",
+      "label": "AI in development",
       "items": [
-        "Use of AI agents (Claude, DeepSeek, Big Pickle, etc.)"
+        "AI agents (Claude Code, Cursor, Copilot, DeepSeek)",
+        "MCP (Model Context Protocol)"
       ]
     }
   ],
   "education": [
     {
-      "institution": "NIEPP (Novosibirsk Institute of Economics, Psychology and Law)",
+      "institution": "Novosibirsk Institute of Economics, Psychology and Law (NIEPP)",
       "specialty": "Applied Informatics",
       "graduationYear": 2010
     }
   ],
   "keyAchievements": [
-    "Architecture from scratch: built 10+ large projects through the full lifecycle.",
-    "Legacy migration: moved 2 projects from jQuery/plain JS to React and Vue while preserving business logic with zero downtime.",
-    "Performance: consistently work with Lighthouse and optimise bundles (code-splitting, tree-shaking, dynamic imports).",
-    "Quality: introduce E2E tests during development (Playwright) and run code reviews with checklists.",
-    "Mentoring: over the last 2 years helped 3 juniors reach the Middle level (regular 1:1s, pair programming).",
-    "CI/CD: set up pipelines in GitLab/GitHub Actions (build, tests, deploy)."
+    "Architecture: designed 10+ projects from scratch — CRM, ERP, e-commerce and browser extensions.",
+    "Performance: 10,000+ row tables respond 40% faster, initial bundle −30%, TTFB −60%.",
+    "Releases: introduced Playwright E2E into CI/CD — 25% fewer critical bugs.",
+    "Mentoring: brought 3 juniors up to Middle on the Skladolog and Fabrika Oteley projects (1:1s, pair programming, code review).",
+    "Legacy: moved Corgi from plain JavaScript to React + TypeScript with zero downtime."
   ],
   "whyMe": [
-    "Ready-made architectural foundation — I use proven patterns (Feature-Sliced Design, modular approach), which halves the start time of a new project.",
-    "Quality at every stage — I write tests before the main code (TDD approach combined with Playwright).",
-    "Relieving the lead — I take on technical leadership of a direction, task distribution and mentoring of junior developers.",
-    "Flexibility — I switch easily between monoliths (WordPress / OpenCart) and modern isolated SPAs."
+    "Architectural foundation: Feature-Sliced Design and a modular approach — new projects start twice as fast.",
+    "Quality at every stage: tests alongside the code, E2E for critical flows, checklist-based code review.",
+    "Taking load off the lead: I own technical leadership of a direction, task distribution and mentoring of junior developers.",
+    "AI in the workflow: Claude Code, Cursor and Copilot for refactoring, tests and documentation."
   ],
-  "recommendations": [
-    "Contacts of previous tech leads and product managers are available on request.",
-    "Links to public work projects — provided in a direct message.",
-    "NDA projects — demonstrated only with the client's permission."
+  "links": [
+    {
+      "label": "GitHub — project sources",
+      "url": "https://github.com/vbarkasov"
+    },
+    {
+      "label": "Chrome Web Store — Kinopoisk Torrent Search",
+      "url": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld"
+    },
+    {
+      "label": "Live demo — Child Products Statistics",
+      "url": "http://childproducts.vbarkasov.com/#/research-result"
+    },
+    {
+      "label": "Portfolio source code — vbarkasov-portfolio-vue",
+      "url": "https://github.com/vbarkasov/vbarkasov-portfolio-vue"
+    }
   ]
 }

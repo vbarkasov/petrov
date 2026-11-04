@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "locale": "ru",
-  "about": "Frontend-эксперт с более чем 15-летним стажем. Специализируюсь на архитектуре высоконагруженных SPA и SSR-приложений на Vue 3 (Nuxt) и React (Next.js). Проектирую продукты «с нуля»: от дизайн-системы в Figma до настройки CI/CD и организации код-ревью. Ищу позицию разработчика в продуктовой компании с сильной инженерной культурой.",
+  "about": "Frontend-разработчик с 16-летним коммерческим опытом (с 2010 года). Проектирую SPA и SSR на Vue 3 (Nuxt) и React (Next.js), перевожу легаси на современный стек, настраиваю CI/CD, E2E-тесты и код-ревью. Опыт в интернет-банкинге (50 000+ активных пользователей), VoIP/WebRTC, CRM/ERP, e-commerce и браузерных расширениях. Формат работы — удалённо, UTC+3 (московское время).",
   "keyTechnologies": [
     "TypeScript",
     "React 18+",
@@ -19,12 +19,11 @@
     "MCP"
   ],
   "competencies": [
-    "Проектирование архитектуры (SPA, SSR, SSG).",
-    "Миграция легаси-кода на современные стеки.",
-    "Настройка производительности (Lighthouse, оптимизация бандлов).",
-    "Внедрение E2E-тестирования (Playwright) в пайплайны разработки.",
-    "Интеграция AI-инструментов (Claude, OpenAI, DeepSeek) в рабочие процессы.",
-    "Использование ИИ-агентов (Claude Code, Cursor, DeepSeek Coder, Copilot) для ускорения SDLC: рефакторинг легаси-кода, генерация и покрытие тестами, отладка, генерация документации, автоматизация код-ревью и исследование решений в режиме Vibe Coding."
+    "Архитектура SPA, SSR и SSG на Vue 3 (Nuxt) и React (Next.js), TypeScript.",
+    "Производительность: Lighthouse и Core Web Vitals, code-splitting, кэширование Nginx — TTFB −60%, стартовый бандл −30%, отклик таблиц −40%.",
+    "Качество релизов: Playwright E2E в CI/CD и код-ревью по чек-листам — критических багов меньше на 25%.",
+    "Легаси-миграции: перевёл Corgi с чистого JavaScript на React + TypeScript без даунтайма.",
+    "AI-assisted development: Claude Code, Cursor, Copilot, DeepSeek — рефакторинг, тесты и документация."
   ],
   "experience": [
     {
@@ -45,10 +44,11 @@
             "Playwright"
           ],
           "achievements": [
-            "Спроектировал модульную архитектуру с нуля.",
-            "Оптимизировал рендеринг таблиц с 10 000+ строк — время отклика интерфейса снижено на 40%.",
-            "Внедрил E2E-тестирование (Playwright) в CI/CD-пайплайн, что сократило количество критических багов в релизах на 25%.",
-            "Разработал систему динамической подгрузки модулей, уменьшив размер первоначального бандла на 30%."
+            "Спроектировал модульную архитектуру приложения с нуля.",
+            "Оптимизировал рендеринг таблиц с 10 000+ строк — время отклика интерфейса снизилось на 40%.",
+            "Внедрил E2E-тестирование (Playwright) в CI/CD-пайплайн — критических багов в релизах стало меньше на 25%.",
+            "Разработал систему динамической подгрузки модулей, уменьшив стартовый бандл на 30%.",
+            "Менторил джуниор-разработчиков: 1:1, парное программирование, код-ревью."
           ],
           "previewImage": "/static/portfolio/2024-skladolog/001.png",
           "images": [
@@ -95,13 +95,14 @@
             "Ant Design"
           ],
           "achievements": [
-            "Реализовал проект с нуля — от структуры приложения до пользовательских сценариев управления оптовыми продажами."
+            "Реализовал проект с нуля — от структуры приложения до пользовательских сценариев управления оптовыми продажами.",
+            "Спроектировал компонентную архитектуру на React, Zustand и Ant Design."
           ]
         },
         {
           "id": "crm-b2b-services",
           "name": "CRM B2B-система для управления услугами бизнеса",
-          "description": "CRM (система управления взаимоотношениями с клиентами) — система, используемая для управления взаимодействиями и данными клиентов.",
+          "description": "CRM для управления услугами B2B-клиентов",
           "stack": [
             "Nuxt 4",
             "TypeScript",
@@ -109,7 +110,8 @@
             "QML"
           ],
           "achievements": [
-            "Реализовал полностью несколько крупных модулей проекта с нуля."
+            "Реализовал с нуля несколько крупных модулей: структура данных, интерфейс и интеграция с API.",
+            "Работал в стеке Nuxt 4, TypeScript и Vite."
           ],
           "previewImage": "/static/portfolio/2022-crm/000.png",
           "images": [
@@ -133,7 +135,7 @@
             "Chrome Extensions API"
           ],
           "achievements": [
-            "Провёл полный рефакторинг легаси-кода (чистый JS → модульная архитектура на React + TypeScript).",
+            "Провёл полный рефакторинг легаси-кода (чистый JavaScript → модульная архитектура на React + TypeScript).",
             "Интегрировал синтез речи (Web Speech API) и систему контекстных подсказок на основе частотности слов.",
             "Ежедневная активность пользователей выросла на 30% (данные внутренней аналитики)."
           ],
@@ -158,8 +160,8 @@
         },
         {
           "id": "chat-widget",
-          "name": "Внутренний чат-виджет для CRM (MVP)",
-          "description": "Полнофункциональный чат для CRM",
+          "name": "Внутренний чат-виджет для CRM",
+          "description": "Чат с живым соединением и историей сообщений",
           "stack": [
             "React",
             "WebSocket",
@@ -180,167 +182,9 @@
           ]
         },
         {
-          "id": "alfa-bank-jbzoo-payment-module",
-          "name": "Модуль оплаты Alfa Bank для Joomla 3",
-          "description": "Модуль оплаты для компонента JBZoo в CMS Joomla 3",
-          "stack": [
-            "PHP",
-            "JBZoo",
-            "Joomla",
-            "Alfa Bank",
-            "E-commerce",
-            "Module"
-          ],
-          "achievements": [
-            "Возможность оплаты в интернет-магазине через Альфа-Банк"
-          ],
-          "previewImage": "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
-          "images": [
-            "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
-            "/static/portfolio/2016-alfabank-jbzoo-payment-module/screen_01.png"
-          ]
-        },
-        {
-          "id": "monster-ui-addressbooks",
-          "name": "Address Books",
-          "description": "SIP-приложение для фреймворка Monster UI",
-          "stack": [
-            "Monster UI",
-            "SIP",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [
-            "Управление адресными книгами"
-          ],
-          "previewImage": "/static/portfolio/2018-monster-ui-addressbooks/screen001_preview.png",
-          "images": [
-            "/static/portfolio/2018-monster-ui-addressbooks/screen001.png"
-          ]
-        },
-        {
-          "id": "bitcoin-browser-extension",
-          "name": "Bitcoin Browser Extension",
-          "description": "Браузерное расширение для Google Chrome и Firefox.",
-          "stack": [
-            "Chrome",
-            "Extension",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [
-            "Отображение графика курса выбранного периода",
-            "Расчёт стоимости одной валюты в другой (калькулятор валют)",
-            "Отображение текущего биткоин-курса в одной из 20 валют мира на иконке"
-          ],
-          "previewImage": "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
-          "images": [
-            "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
-            "/static/portfolio/2017-bitcoin-browser-extension/screen002.png",
-            "/static/portfolio/2017-bitcoin-browser-extension/screen003.png"
-          ]
-        },
-        {
-          "id": "kinopoisk-torrent-search",
-          "name": "Kinopoisk Torrent Search",
-          "description": "Расширение для браузера, которое добавляет кнопку T рядом с названием фильма на сайте Kinopoisk.",
-          "stack": [
-            "Chrome",
-            "Extension",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Torrent"
-          ],
-          "achievements": [
-            "Быстрый поиск торрентов"
-          ],
-          "previewImage": "/static/portfolio/2017-kinopoisk-torrent-search/screen.png",
-          "images": [
-            "/static/portfolio/2017-kinopoisk-torrent-search/screen.png"
-          ]
-        },
-        {
-          "id": "disallow-ads-vk-com",
-          "name": "Disallow Ads in VK",
-          "description": "Расширение для Google Chrome, которое запрещает показ рекламы в социальной сети VK.",
-          "stack": [
-            "Chrome",
-            "Extension",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "VK",
-            "Ads"
-          ],
-          "achievements": [
-            "Запрещает показ рекламы в баннерах",
-            "Запрещает показ рекламы в постах",
-            "Запрещает показ рекламы в аудио"
-          ],
-          "previewImage": "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
-          "images": [
-            "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
-            "/static/portfolio/2018-ubrat-reklamu-vk/screen_002.png"
-          ]
-        },
-        {
-          "id": "child-products-statistics",
-          "name": "Child Products Statistics Website",
-          "description": "Веб-сайт со статистическими данными о товарах для детей с графиками.",
-          "stack": [
-            "Vue",
-            "Vuex",
-            "Vuetify",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [
-            "Красивые графики",
-            "Интерактивность",
-            "Адаптивный вид",
-            "Минималистичный дизайн"
-          ],
-          "previewImage": "/static/portfolio/2018-child-products/screen_preview.png",
-          "images": [
-            "/static/portfolio/2018-child-products/screen_001.png",
-            "/static/portfolio/2018-child-products/screen_002.png",
-            "/static/portfolio/2018-child-products/screen_003.png"
-          ]
-        },
-        {
-          "id": "vbarkasov-portfolio-site",
-          "name": "Portfolio Site",
-          "description": "Сайт-портфолио веб-разработчика.",
-          "stack": [
-            "Vue",
-            "Vuex",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [
-            "Быстрый",
-            "Простой",
-            "Удобный",
-            "Адаптивный вид",
-            "Минималистичный дизайн"
-          ],
-          "previewImage": "/static/portfolio/2018-portfolio-site/screen_001.png",
-          "images": [
-            "/static/portfolio/2018-portfolio-site/screen_001.png",
-            "/static/portfolio/2018-portfolio-site/screen_002.png",
-            "/static/portfolio/2018-portfolio-site/screen_003.png",
-            "/static/portfolio/2018-portfolio-site/screen_004.png"
-          ]
-        },
-        {
           "id": "infinity-resources",
           "name": "Infinity Resources",
-          "description": "В задачи входили добавление новых функций и исправление багов.",
+          "description": "Платформа управления персоналом: новые функции и исправление багов",
           "stack": [
             "Vue",
             "Vuex",
@@ -349,9 +193,8 @@
             "CSS"
           ],
           "achievements": [
-            "Интерактивность",
-            "Адаптивность",
-            "Минималистичный дизайн"
+            "Дорабатывал платформу workforce management на Vue и Vuex: новые функции и исправление багов.",
+            "Отвечал за адаптивность и интерактивность ключевых экранов."
           ],
           "previewImage": "/static/portfolio/2019-infinity-resources/screen_preview.jpg",
           "images": [
@@ -362,37 +205,9 @@
           ]
         },
         {
-          "id": "cashback-browser-extension",
-          "name": "Cashback Extension for Browsers",
-          "description": "Сервис кэшбэка, который помогает совершать выгодные покупки в интернете.",
-          "stack": [
-            "Cashback",
-            "Chrome",
-            "Firefox",
-            "Extension",
-            "Addon",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [
-            "Создаёт кэшбэк на партнёрских сайтах",
-            "Показывает купоны на партнёрских страницах",
-            "Показывает push-уведомления",
-            "Показывает всплывающее окно со списком партнёрских сайтов",
-            "Авторизация"
-          ],
-          "previewImage": "/static/portfolio/2019-cashback-extension/screen_preview.jpg",
-          "images": [
-            "/static/portfolio/2019-cashback-extension/screen_001.png",
-            "/static/portfolio/2019-cashback-extension/screen_002.png",
-            "/static/portfolio/2019-cashback-extension/screen_003.png"
-          ]
-        },
-        {
           "id": "joxi-browser-extension",
           "name": "Joxi",
-          "description": "В задачи входило редизайн расширения и добавление новой функциональности.",
+          "description": "Браузерное расширение для создания и редактирования скриншотов",
           "stack": [
             "Chrome",
             "Firefox",
@@ -404,9 +219,9 @@
             "Screenshot"
           ],
           "achievements": [
-            "Создание скриншотов страниц",
-            "Редактирование скриншотов",
-            "Сохранение скриншотов в облако и на жёсткий диск"
+            "Провёл редизайн расширения для Chrome, Firefox и Opera.",
+            "Реализовал создание и редактирование скриншотов.",
+            "Добавил сохранение скриншотов в облако и на жёсткий диск."
           ],
           "previewImage": "/static/portfolio/2020-joxi/screen_preview.png",
           "images": [
@@ -422,121 +237,6 @@
             "/static/portfolio/2020-joxi/screen_010.png",
             "/static/portfolio/2020-joxi/screen_011.png"
           ]
-        },
-        {
-          "id": "bitcoin-exchange-service",
-          "name": "Bitcoin Exchange Service",
-          "description": "Сервис позволяет быстро заказать обмен одной валюты на другую. Суммы обмена автоматически рассчитываются.",
-          "stack": [
-            "Vue",
-            "Vuex",
-            "JavaScript",
-            "HTML",
-            "SCSS",
-            "Bitcoin",
-            "Cryptocurrency",
-            "Exchange"
-          ],
-          "achievements": [
-            "Актуальные курсы обмена",
-            "Минималистичный дизайн",
-            "Высокая скорость",
-            "Дружелюбный интерфейс"
-          ],
-          "previewImage": "/static/portfolio/2021-bitexchange/001.png",
-          "images": [
-            "/static/portfolio/2021-bitexchange/001.png"
-          ]
-        },
-        {
-          "id": "web-service-ads-telegram",
-          "name": "Web Service for Managing Ads in Telegram",
-          "description": "Участие в создании сервиса для управления рекламой в Telegram-каналах для администраторов и рекламодателей.",
-          "stack": [
-            "Vue",
-            "Vuex",
-            "JavaScript",
-            "HTML",
-            "SCSS",
-            "Telegram",
-            "Ads"
-          ],
-          "achievements": [],
-          "previewImage": "/static/portfolio/2021-admint/001.jpg",
-          "images": [
-            "/static/portfolio/2021-admint/001.jpg",
-            "/static/portfolio/2021-admint/002.jpg",
-            "/static/portfolio/2021-admint/003.jpg",
-            "/static/portfolio/2021-admint/004.jpg",
-            "/static/portfolio/2021-admint/005.jpg",
-            "/static/portfolio/2021-admint/006.jpg"
-          ]
-        },
-        {
-          "id": "crm-chat",
-          "name": "Chat for CRM",
-          "description": "Полнофункциональный чат для CRM",
-          "stack": [
-            "Vue",
-            "Vue3",
-            "Vuetify",
-            "Composition API",
-            "CRM",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [],
-          "previewImage": "/static/portfolio/2022-crm-chat/000.png",
-          "images": [
-            "/static/portfolio/2022-crm-chat/000.png",
-            "/static/portfolio/2022-crm-chat/001.png",
-            "/static/portfolio/2022-crm-chat/002.png",
-            "/static/portfolio/2022-crm-chat/003.png",
-            "/static/portfolio/2022-crm-chat/004.png",
-            "/static/portfolio/2022-crm-chat/005.png"
-          ]
-        },
-        {
-          "id": "change-design-ecommerce-site-ocean-krasoty",
-          "name": "Изменение дизайна интернет-магазина Ocean Krasoty",
-          "description": "Изменение дизайна интернет-магазина Ocean Krasoty",
-          "stack": [
-            "Netcat",
-            "PHP",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [],
-          "previewImage": "/static/portfolio/2016-ocean/preview.jpg",
-          "images": [
-            "/static/portfolio/2016-ocean/preview.jpg",
-            "/static/portfolio/2016-ocean/001.png",
-            "/static/portfolio/2016-ocean/002.jpg",
-            "/static/portfolio/2016-ocean/003.jpg"
-          ]
-        },
-        {
-          "id": "admin-interface-ecommerce-site",
-          "name": "Admin Interface for Ecommerce Site",
-          "description": "Custom user interface for the ecommerce site",
-          "stack": [
-            "Yii2",
-            "Ecommerce",
-            "PHP",
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ],
-          "achievements": [
-            "Two-column view",
-            "Orders tabs",
-            "Calculation of the total sum"
-          ],
-          "previewImage": "/static/portfolio/2016-magix-admin-ui/001.png",
-          "images": [
-            "/static/portfolio/2016-magix-admin-ui/001.png"
-          ]
         }
       ]
     },
@@ -546,7 +246,7 @@
       "company": "SIPLABS Communications",
       "role": "JavaScript-программист",
       "achievements": [
-        "Разрабатывал VoIP-приложение Monster UI (WebRTC-клиент).",
+        "Команда 10+ человек: разрабатывал VoIP-приложение Monster UI (WebRTC-клиент).",
         "Оптимизировал работу аудио-потоков, снизив задержки передачи данных в пиковые часы на 20%.",
         "Внёс вклад в создание клиентской архитектуры на чистом JS с модульной системой."
       ]
@@ -557,7 +257,7 @@
       "company": "Softomate Company",
       "role": "JavaScript-программист",
       "achievements": [
-        "Создавал кросс-браузерные расширения для автоматизации бизнес-процессов (парсинг, автозаполнение форм).",
+        "Команда 15+ человек: создавал кросс-браузерные расширения для автоматизации бизнес-процессов (парсинг, автозаполнение форм).",
         "Разработал внутреннее API для расширений, которое стандартизировало работу 3 команд разработки и ускорило выпуск новых версий на 40%."
       ]
     },
@@ -567,7 +267,7 @@
       "company": "ЦФТ (Системы интернет-банкинга)",
       "role": "Инженер-программист",
       "achievements": [
-        "Участвовал в разработке платёжных кабинетов для банков с 50 000+ активных пользователей.",
+        "Компания 1500+ сотрудников: участвовал в разработке платёжных кабинетов для банков с 50 000+ активных пользователей.",
         "Создал библиотеку переиспользуемых UI-компонентов на jQuery, что ускорило разработку новых модулей на 60% (сократило время вывода фич с 3 недель до 1,5)."
       ]
     }
@@ -581,7 +281,7 @@
         "TypeScript",
         "React 18+ (Next.js 14+)",
         "Vue 3 (Nuxt 3)",
-        "Vue 2 (опционально)"
+        "Vue 2 (Options API)"
       ]
     },
     {
@@ -616,6 +316,8 @@
         "Vite",
         "Docker",
         "Git (GitLab / GitHub)",
+        "GitHub Actions",
+        "GitLab CI",
         "Nginx (базовый уровень)"
       ]
     },
@@ -640,9 +342,10 @@
     },
     {
       "id": "innovation",
-      "label": "Инновации",
+      "label": "AI в разработке",
       "items": [
-        "Использование ИИ-агентов (Claude, DeepSeek, Big Pickle и др.)"
+        "AI-агенты (Claude Code, Cursor, Copilot, DeepSeek)",
+        "MCP (Model Context Protocol)"
       ]
     }
   ],
@@ -654,22 +357,34 @@
     }
   ],
   "keyAchievements": [
-    "Архитектура с нуля: построил 10+ крупных проектов с нулевого цикла.",
-    "Легаси-миграция: перевёл 2 проекта с jQuery/чистого JS на React и Vue с сохранением бизнес-логики и нулевым даунтаймом.",
-    "Производительность: системно работаю с Lighthouse, оптимизирую бандлы (code-splitting, tree-shaking, динамические импорты).",
-    "Качество: внедряю E2E-тесты на этапе разработки (Playwright), провожу код-ревью с чек-листами.",
-    "Менторство: за последние 2 года вывел 3 джуниоров до уровня Middle-разработчиков (регулярный 1:1, парное программирование).",
-    "CI/CD: настраиваю пайплайны в GitLab/GitHub Actions (сборка, тесты, деплой)."
+    "Архитектура: спроектировал с нуля 10+ проектов — CRM, ERP, e-commerce и браузерные расширения.",
+    "Производительность: отклик таблиц на 10 000+ строк −40%, стартовый бандл −30%, TTFB −60%.",
+    "Релизы: внедрил Playwright E2E в CI/CD — на 25% меньше критических багов.",
+    "Менторство: вывел 3 джуниоров до Middle на проектах «Складолог» и «Фабрика отелей» (1:1, парное программирование, код-ревью).",
+    "Легаси: перевёл Corgi с чистого JavaScript на React + TypeScript без даунтайма."
   ],
   "whyMe": [
-    "Готовый архитектурный фундамент — использую наработанные шаблоны (Feature-Sliced Design, модульный подход), что сокращает старт нового проекта в 2 раза.",
-    "Качество на всех этапах — тесты пишу до написания основного кода (TDD-подход в связке с Playwright).",
-    "Разгрузка лида — беру на себя техническое руководство направлением, распределение задач и менторство младших разработчиков.",
-    "Гибкость — легко переключаюсь между монолитами (WordPress / OpenCart) и современными изолированными SPA."
+    "Архитектурный фундамент: Feature-Sliced Design и модульный подход — старт нового проекта быстрее в 2 раза.",
+    "Качество на всех этапах: тесты параллельно с кодом, E2E критичных сценариев, код-ревью по чек-листам.",
+    "Разгрузка лида: беру техническое руководство направлением, распределение задач и менторство младших разработчиков.",
+    "AI в процессе: Claude Code, Cursor и Copilot для рефакторинга, тестов и документации."
   ],
-  "recommendations": [
-    "Контакты предыдущих тимлидов и продакт-менеджеров предоставлю по запросу.",
-    "Ссылки на рабочие проекты (публичные) — в личном сообщении.",
-    "Проекты под NDA — демонстрирую только с разрешения заказчика."
+  "links": [
+    {
+      "label": "GitHub — исходники проектов",
+      "url": "https://github.com/vbarkasov"
+    },
+    {
+      "label": "Chrome Web Store — Kinopoisk Torrent Search",
+      "url": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld"
+    },
+    {
+      "label": "Демо — Child Products Statistics",
+      "url": "http://childproducts.vbarkasov.com/#/research-result"
+    },
+    {
+      "label": "Исходники портфолио — vbarkasov-portfolio-vue",
+      "url": "https://github.com/vbarkasov/vbarkasov-portfolio-vue"
+    }
   ]
 }
