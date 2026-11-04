@@ -6,7 +6,6 @@ export interface UI {
   nav: {
     portfolio: string;
     resumes: string;
-    projects: string;
     contacts: string;
   };
   hero: {
@@ -18,7 +17,6 @@ export interface UI {
   sections: {
     about: string;
     resumes: string;
-    projects: string;
     achievements: string;
     whyMe: string;
     experience: string;
@@ -31,7 +29,6 @@ export interface UI {
   labels: {
     keyTech: string;
     stack: string;
-    selectedProjects: string;
     allResumes: string;
     backToPortfolio: string;
     print: string;
@@ -44,6 +41,10 @@ export interface UI {
     github: string;
     highlights: string;
     openResume: string;
+    openPortfolio: string;
+    close: string;
+    previous: string;
+    next: string;
     skipToContent: string;
   };
   theme: {

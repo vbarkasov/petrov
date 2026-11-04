@@ -1,0 +1,804 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "001",
+      "slug": "skladolog",
+      "title": {
+        "ru": "«Складолог»",
+        "en": "Skladolog"
+      },
+      "description": {
+        "ru": "CRM-система для складского учёта",
+        "en": "Inventory management CRM"
+      },
+      "features": [],
+      "timeText": "2024",
+      "previewImage": "/static/portfolio/2024-skladolog/001.png",
+      "images": [
+        "/static/portfolio/2024-skladolog/001.png",
+        "/static/portfolio/2024-skladolog/002.png",
+        "/static/portfolio/2024-skladolog/003.png",
+        "/static/portfolio/2024-skladolog/004.png",
+        "/static/portfolio/2024-skladolog/005.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "pinia",
+        "typescript",
+        "vite",
+        "playwright",
+        "crm",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "002",
+      "slug": "online-exhibitions",
+      "title": {
+        "ru": "Online exhibitions for the HORECA, spa and bath industry",
+        "en": "Online exhibitions for the HORECA, spa and bath industry"
+      },
+      "description": {
+        "ru": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR)",
+        "en": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR)"
+      },
+      "features": [],
+      "timeText": "2024",
+      "previewImage": "/static/portfolio/2024-fabrika/001.png",
+      "images": [
+        "/static/portfolio/2024-fabrika/002.png",
+        "/static/portfolio/2024-fabrika/003.png",
+        "/static/portfolio/2024-fabrika/004.png",
+        "/static/portfolio/2024-fabrika/005.png",
+        "/static/portfolio/2024-fabrika/006.png",
+        "/static/portfolio/2024-fabrika/007.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "quasar",
+        "ssr",
+        "composition-api",
+        "crm",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "003",
+      "slug": "crm",
+      "title": {
+        "ru": "CRM (customer relationship management)",
+        "en": "CRM (customer relationship management)"
+      },
+      "description": {
+        "ru": "Implemented the entire client part of the application with the Quasar framework (Vue3)",
+        "en": "Implemented the entire client part of the application with the Quasar framework (Vue3)"
+      },
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2022-crm/000.png",
+      "images": [
+        "/static/portfolio/2022-crm/001.png",
+        "/static/portfolio/2022-crm/002.png",
+        "/static/portfolio/2022-crm/003.png",
+        "/static/portfolio/2022-crm/004.png",
+        "/static/portfolio/2022-crm/005.png",
+        "/static/portfolio/2022-crm/006.png",
+        "/static/portfolio/2022-crm/007.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "quasar",
+        "composition-api",
+        "crm",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "004",
+      "slug": "crm-chat",
+      "title": {
+        "ru": "Chat for customer relationship management (CRM)",
+        "en": "Chat for customer relationship management (CRM)"
+      },
+      "description": {
+        "ru": "Fully featured chat for the CRM",
+        "en": "Fully featured chat for the CRM"
+      },
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2022-crm-chat/000.png",
+      "images": [
+        "/static/portfolio/2022-crm-chat/001.png",
+        "/static/portfolio/2022-crm-chat/002.png",
+        "/static/portfolio/2022-crm-chat/003.png",
+        "/static/portfolio/2022-crm-chat/004.png",
+        "/static/portfolio/2022-crm-chat/005.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "vuetify",
+        "composition-api",
+        "crm",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "005",
+      "slug": "bitcoin-exchange-service",
+      "title": {
+        "ru": "Bitcoin exchange service",
+        "en": "Bitcoin exchange service"
+      },
+      "description": {
+        "ru": "Web service for exchanging currencies and cryptocurrencies",
+        "en": "Web service for exchanging currencies and cryptocurrencies"
+      },
+      "features": [],
+      "timeText": "2021",
+      "previewImage": "/static/portfolio/2021-bitexchange/001.png",
+      "images": [
+        "/static/portfolio/2021-bitexchange/001.png"
+      ],
+      "tags": [
+        "bitexchange",
+        "exchange",
+        "vue",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "006",
+      "slug": "corgi-extension",
+      "title": {
+        "ru": "Corgi browser extension",
+        "en": "Corgi browser extension"
+      },
+      "description": {
+        "ru": "The browser extension allows you to learn foreign words when you surf the internet.",
+        "en": "The browser extension allows you to learn foreign words when you surf the internet."
+      },
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2022-corgi/000.png",
+      "images": [
+        "/static/portfolio/2022-corgi/001.png",
+        "/static/portfolio/2022-corgi/002.png",
+        "/static/portfolio/2022-corgi/003.png",
+        "/static/portfolio/2022-corgi/004.png",
+        "/static/portfolio/2022-corgi/005.png",
+        "/static/portfolio/2022-corgi/006.png",
+        "/static/portfolio/2022-corgi/007.png",
+        "/static/portfolio/2022-corgi/008.png",
+        "/static/portfolio/2022-corgi/009.png",
+        "/static/portfolio/2022-corgi/010.png",
+        "/static/portfolio/2022-corgi/011.png",
+        "/static/portfolio/2022-corgi/012.png",
+        "/static/portfolio/2022-corgi/013.png",
+        "/static/portfolio/2022-corgi/014.png",
+        "/static/portfolio/2022-corgi/015.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "translate",
+        "corgi",
+        "addon",
+        "browser"
+      ]
+    },
+    {
+      "id": "007",
+      "slug": "web-service-ads-telegram",
+      "title": {
+        "ru": "A web service for managing ads in Telegram",
+        "en": "A web service for managing ads in Telegram"
+      },
+      "description": {
+        "ru": "Participated in the creation web service for managing ads in Telegram channels for administrators and advertisers.",
+        "en": "Participated in the creation web service for managing ads in Telegram channels for administrators and advertisers."
+      },
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2021-admint/001.jpg",
+      "images": [
+        "/static/portfolio/2021-admint/001.jpg",
+        "/static/portfolio/2021-admint/002.jpg",
+        "/static/portfolio/2021-admint/003.jpg",
+        "/static/portfolio/2021-admint/004.jpg",
+        "/static/portfolio/2021-admint/005.jpg",
+        "/static/portfolio/2021-admint/006.jpg"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "scss",
+        "telegram",
+        "ads"
+      ]
+    },
+    {
+      "id": "008",
+      "slug": "bitcoin-exchange-service",
+      "title": {
+        "ru": "Web-service for exchanging currencies and cryptocurrencies",
+        "en": "Web-service for exchanging currencies and cryptocurrencies"
+      },
+      "description": {
+        "ru": "The service allows you to quickly order the exchange of one currency for another. Exchange amounts are automatically calculated.",
+        "en": "The service allows you to quickly order the exchange of one currency for another. Exchange amounts are automatically calculated."
+      },
+      "features": [
+        {
+          "ru": "Always up-to-date exchange rates",
+          "en": "Always up-to-date exchange rates"
+        },
+        {
+          "ru": "Minimalistic design",
+          "en": "Minimalistic design"
+        },
+        {
+          "ru": "Fast speed",
+          "en": "Fast speed"
+        },
+        {
+          "ru": "User-friendly interface",
+          "en": "User-friendly interface"
+        }
+      ],
+      "timeText": "2021",
+      "previewImage": "/static/portfolio/2021-bitexchange/001.png",
+      "images": [
+        "/static/portfolio/2021-bitexchange/001.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "scss",
+        "bitcoin",
+        "cryptocurrency",
+        "exchange"
+      ]
+    },
+    {
+      "id": "009",
+      "slug": "joxi-browser-extension",
+      "title": {
+        "ru": "Joxi - browser extension for creating screenshots from pages",
+        "en": "Joxi - browser extension for creating screenshots from pages"
+      },
+      "description": {
+        "ru": "Tasks included redesigning the extension and adding new functionality",
+        "en": "Tasks included redesigning the extension and adding new functionality"
+      },
+      "features": [
+        {
+          "ru": "taking screenshots from pages",
+          "en": "taking screenshots from pages"
+        },
+        {
+          "ru": "screenshot editing",
+          "en": "screenshot editing"
+        },
+        {
+          "ru": "saving screenshots to the cloud and hard drive",
+          "en": "saving screenshots to the cloud and hard drive"
+        }
+      ],
+      "timeText": "2020",
+      "previewImage": "/static/portfolio/2020-joxi/screen_preview.png",
+      "images": [
+        "/static/portfolio/2020-joxi/screen_001.png",
+        "/static/portfolio/2020-joxi/screen_002.png",
+        "/static/portfolio/2020-joxi/screen_003.png",
+        "/static/portfolio/2020-joxi/screen_004.png",
+        "/static/portfolio/2020-joxi/screen_005.png",
+        "/static/portfolio/2020-joxi/screen_006.png",
+        "/static/portfolio/2020-joxi/screen_007.png",
+        "/static/portfolio/2020-joxi/screen_008.png",
+        "/static/portfolio/2020-joxi/screen_009.png",
+        "/static/portfolio/2020-joxi/screen_010.png",
+        "/static/portfolio/2020-joxi/screen_011.png"
+      ],
+      "tags": [
+        "chrome",
+        "firefox",
+        "opera",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "joxi",
+        "capture",
+        "screen",
+        "screenshot"
+      ]
+    },
+    {
+      "id": "010",
+      "slug": "infinity-resources",
+      "title": {
+        "ru": "Infinity Resources - Workforce management platform",
+        "en": "Infinity Resources - Workforce management platform"
+      },
+      "description": {
+        "ru": "Tasks included adding new features and fixing bugs.",
+        "en": "Tasks included adding new features and fixing bugs."
+      },
+      "features": [
+        {
+          "ru": "interactive",
+          "en": "interactive"
+        },
+        {
+          "ru": "adaptive",
+          "en": "adaptive"
+        },
+        {
+          "ru": "minimalistic design",
+          "en": "minimalistic design"
+        }
+      ],
+      "timeText": "2019",
+      "previewImage": "/static/portfolio/2019-infinity-resources/screen_preview.jpg",
+      "images": [
+        "/static/portfolio/2019-infinity-resources/screen_001.png",
+        "/static/portfolio/2019-infinity-resources/screen_002.png",
+        "/static/portfolio/2019-infinity-resources/screen_003.png",
+        "/static/portfolio/2019-infinity-resources/screen_004.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "011",
+      "slug": "cashback-browser-extension",
+      "title": {
+        "ru": "Cashback extension for browsers",
+        "en": "Cashback extension for browsers"
+      },
+      "description": {
+        "ru": "Cashback service that helps you make profitable purchases on the Internet",
+        "en": "Cashback service that helps you make profitable purchases on the Internet"
+      },
+      "features": [
+        {
+          "ru": "creates cashback on affilate sites",
+          "en": "creates cashback on affilate sites"
+        },
+        {
+          "ru": "shows coupons on affiliate pages",
+          "en": "shows coupons on affiliate pages"
+        },
+        {
+          "ru": "shows push-notifications",
+          "en": "shows push-notifications"
+        },
+        {
+          "ru": "shows popup with list of affiliate sites",
+          "en": "shows popup with list of affiliate sites"
+        },
+        {
+          "ru": "authorization",
+          "en": "authorization"
+        }
+      ],
+      "timeText": "2019",
+      "previewImage": "/static/portfolio/2019-cashback-extension/screen_preview.jpg",
+      "images": [
+        "/static/portfolio/2019-cashback-extension/screen_001.png",
+        "/static/portfolio/2019-cashback-extension/screen_002.png",
+        "/static/portfolio/2019-cashback-extension/screen_003.png"
+      ],
+      "tags": [
+        "cashback",
+        "chrome",
+        "firefox",
+        "extension",
+        "addon",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "012",
+      "slug": "disallow-ads-vk-com",
+      "title": {
+        "ru": "Disallow ads in site vk.com",
+        "en": "Disallow ads in site vk.com"
+      },
+      "description": {
+        "ru": "The extension for google chrome, which disallow ads in social network vk.com",
+        "en": "The extension for google chrome, which disallow ads in social network vk.com"
+      },
+      "features": [
+        {
+          "ru": "dissalow ads banners",
+          "en": "dissalow ads banners"
+        },
+        {
+          "ru": "dissalow ads posts",
+          "en": "dissalow ads posts"
+        },
+        {
+          "ru": "dissalow ads audio",
+          "en": "dissalow ads audio"
+        }
+      ],
+      "timeText": "2018",
+      "previewImage": "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
+      "images": [
+        "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
+        "/static/portfolio/2018-ubrat-reklamu-vk/screen_002.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "vk",
+        "ads"
+      ]
+    },
+    {
+      "id": "013",
+      "slug": "child-products-statistics",
+      "title": {
+        "ru": "Statistics website of children's goods",
+        "en": "Statistics website of children's goods"
+      },
+      "description": {
+        "ru": "The website with statistical data of children's goods with graphs",
+        "en": "The website with statistical data of children's goods with graphs"
+      },
+      "features": [
+        {
+          "ru": "beautiful graphs",
+          "en": "beautiful graphs"
+        },
+        {
+          "ru": "interactive",
+          "en": "interactive"
+        },
+        {
+          "ru": "adaptive view",
+          "en": "adaptive view"
+        },
+        {
+          "ru": "minimalistic design",
+          "en": "minimalistic design"
+        }
+      ],
+      "timeText": "October 2018",
+      "previewImage": "/static/portfolio/2018-child-products/screen_preview.png",
+      "images": [
+        "/static/portfolio/2018-child-products/screen_001.png",
+        "/static/portfolio/2018-child-products/screen_002.png",
+        "/static/portfolio/2018-child-products/screen_003.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "vuetify",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "links": [
+        {
+          "title": "Demo",
+          "href": "http://childproducts.vbarkasov.com/#/research-result",
+          "icon": [
+            "fas",
+            "fa-external-link-alt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "014",
+      "slug": "vbarkasov-portfolio-site",
+      "title": {
+        "ru": "Portfolio site",
+        "en": "Portfolio site"
+      },
+      "description": {
+        "ru": "The portfolio site of web developer",
+        "en": "The portfolio site of web developer"
+      },
+      "features": [
+        {
+          "ru": "fast",
+          "en": "fast"
+        },
+        {
+          "ru": "simple",
+          "en": "simple"
+        },
+        {
+          "ru": "convenient",
+          "en": "convenient"
+        },
+        {
+          "ru": "adaptive view",
+          "en": "adaptive view"
+        },
+        {
+          "ru": "minimalistic design",
+          "en": "minimalistic design"
+        }
+      ],
+      "timeText": "August 2018",
+      "previewImage": "/static/portfolio/2018-portfolio-site/screen_001.png",
+      "images": [
+        "/static/portfolio/2018-portfolio-site/screen_001.png",
+        "/static/portfolio/2018-portfolio-site/screen_002.png",
+        "/static/portfolio/2018-portfolio-site/screen_003.png",
+        "/static/portfolio/2018-portfolio-site/screen_004.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "links": [
+        {
+          "title": "Source code in Github",
+          "href": "https://github.com/vbarkasov/vbarkasov-portfolio-vue",
+          "icon": [
+            "fab",
+            "github"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "015",
+      "slug": "monster-ui-addressbooks",
+      "title": {
+        "ru": "Address Books",
+        "en": "Address Books"
+      },
+      "description": {
+        "ru": "SIP-application for Monster UI framework",
+        "en": "SIP-application for Monster UI framework"
+      },
+      "features": [
+        {
+          "ru": "Address books management",
+          "en": "Address books management"
+        }
+      ],
+      "timeText": "February 2018",
+      "previewImage": "/static/portfolio/2018-monster-ui-addressbooks/screen001_preview.png",
+      "images": [
+        "/static/portfolio/2018-monster-ui-addressbooks/screen001.png"
+      ],
+      "tags": [
+        "monster-ui",
+        "addressbooks",
+        "sip",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "016",
+      "slug": "kinopoisk-torrent-search",
+      "title": {
+        "ru": "Browser extension for search torrents",
+        "en": "Browser extension for search torrents"
+      },
+      "description": {
+        "ru": "This extension adds T-button near title of film in site kinopoisk.ru",
+        "en": "This extension adds T-button near title of film in site kinopoisk.ru"
+      },
+      "features": [
+        {
+          "ru": "Fast search torrents",
+          "en": "Fast search torrents"
+        }
+      ],
+      "timeText": "2017",
+      "previewImage": "/static/portfolio/2017-kinopoisk-torrent-search/screen.png",
+      "images": [
+        "/static/portfolio/2017-kinopoisk-torrent-search/screen.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "torrent"
+      ],
+      "links": [
+        {
+          "title": "Source code in Github",
+          "href": "https://github.com/vbarkasov/kinopoisk-torrent-search",
+          "icon": [
+            "fab",
+            "github"
+          ]
+        },
+        {
+          "title": "This extension in Google Store",
+          "href": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld",
+          "icon": [
+            "fab",
+            "google-play"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "017",
+      "slug": "bitcoin-browser-extension",
+      "title": {
+        "ru": "Bitcoin Browser Extension",
+        "en": "Bitcoin Browser Extension"
+      },
+      "description": {
+        "ru": "Browser extension for Google Chrome and Firefox.",
+        "en": "Browser extension for Google Chrome and Firefox."
+      },
+      "features": [
+        {
+          "ru": "Displays graph of currency rate for the selected period",
+          "en": "Displays graph of currency rate for the selected period"
+        },
+        {
+          "ru": "Allows you to calculate the price of one currency in another (currency calculator)",
+          "en": "Allows you to calculate the price of one currency in another (currency calculator)"
+        },
+        {
+          "ru": "Displays on the icon the current bitcoin rate in one of the 20 currencies of the world",
+          "en": "Displays on the icon the current bitcoin rate in one of the 20 currencies of the world"
+        }
+      ],
+      "timeText": "May 2017",
+      "previewImage": "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
+      "images": [
+        "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
+        "/static/portfolio/2017-bitcoin-browser-extension/screen002.png",
+        "/static/portfolio/2017-bitcoin-browser-extension/screen003.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "018",
+      "slug": "alfa-bank-jbzoo-payment-module",
+      "title": {
+        "ru": "Alfa Bank JBZoo payment module for Joomla 3",
+        "en": "Alfa Bank JBZoo payment module for Joomla 3"
+      },
+      "description": {
+        "ru": "Payment module for JBZoo component of CMS Joomla 3",
+        "en": "Payment module for JBZoo component of CMS Joomla 3"
+      },
+      "features": [
+        {
+          "ru": "Allows paying in an online store via Alfa Bank",
+          "en": "Allows paying in an online store via Alfa Bank"
+        }
+      ],
+      "timeText": "July 2016",
+      "previewImage": "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
+      "images": [
+        "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
+        "/static/portfolio/2016-alfabank-jbzoo-payment-module/screen_01.png"
+      ],
+      "tags": [
+        "php",
+        "jbzoo",
+        "joomla",
+        "alfabank",
+        "ecommerce",
+        "module"
+      ]
+    },
+    {
+      "id": "019",
+      "slug": "admin-interface-ecommerce-site",
+      "title": {
+        "ru": "Admin Interface for ecommerce site",
+        "en": "Admin Interface for ecommerce site"
+      },
+      "description": {
+        "ru": "I made custom user interface for ecommerce site",
+        "en": "I made custom user interface for ecommerce site"
+      },
+      "features": [
+        {
+          "ru": "two column view",
+          "en": "two column view"
+        },
+        {
+          "ru": "tabs orders",
+          "en": "tabs orders"
+        },
+        {
+          "ru": "calculate total sum",
+          "en": "calculate total sum"
+        }
+      ],
+      "timeText": "2016",
+      "previewImage": "/static/portfolio/2016-magix-admin-ui/001.png",
+      "images": [
+        "/static/portfolio/2016-magix-admin-ui/001.png"
+      ],
+      "tags": [
+        "yii2",
+        "ecommerce",
+        "php",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "020",
+      "slug": "change-design-ecommerce-site-ocean-krasoty",
+      "title": {
+        "ru": "Change design of ecommerce site",
+        "en": "Change design of ecommerce site"
+      },
+      "description": {
+        "ru": "Change design of ecommerce site Ocean Krasoty",
+        "en": "Change design of ecommerce site Ocean Krasoty"
+      },
+      "features": [],
+      "timeText": "2016",
+      "previewImage": "/static/portfolio/2016-ocean/preview.jpg",
+      "images": [
+        "/static/portfolio/2016-ocean/preview.jpg",
+        "/static/portfolio/2016-ocean/001.png",
+        "/static/portfolio/2016-ocean/002.jpg",
+        "/static/portfolio/2016-ocean/003.jpg"
+      ],
+      "tags": [
+        "netcat",
+        "php",
+        "html",
+        "css"
+      ]
+    }
+  ]
+}

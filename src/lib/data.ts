@@ -2,10 +2,12 @@ import profileJson from '../data/profile.json';
 import baseRu from '../data/resume/base.ru.json';
 import baseEn from '../data/resume/base.en.json';
 import variantsJson from '../data/resume/variants.json';
+import portfolioJson from '../data/portfolio.json';
 import type {
   Locale,
   Profile,
   ResumeBase,
+  PortfolioItem,
   ResumeVariant,
   VariantsFile,
 } from '../types/content';
@@ -31,4 +33,10 @@ export function getVariants(): ResumeVariant[] {
 
 export function getVariant(slug: string): ResumeVariant | undefined {
   return variantsFile.variants.find((variant) => variant.slug === slug);
+}
+
+const portfolio = (portfolioJson as { items: PortfolioItem[] }).items;
+
+export function getPortfolio(): PortfolioItem[] {
+  return portfolio;
 }

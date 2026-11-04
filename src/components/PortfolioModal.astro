@@ -1,0 +1,123 @@
+---
+import type { Locale } from '../types/content';
+import { getUI } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const ui = getUI(locale);
+const navButton =
+  'flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-900 shadow transition hover:bg-white hover:text-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:bg-slate-800/90 dark:text-white dark:hover:bg-slate-800 dark:hover:text-emerald-400';
+---
+
+<dialog
+  id="portfolio-modal"
+  class="m-auto max-h-[92vh] w-[calc(100%-2rem)] max-w-5xl rounded-2xl border border-slate-200 bg-white p-0 shadow-xl dark:border-slate-800 dark:bg-slate-900"
+  aria-labelledby="portfolio-modal-title"
+>
+  <div class="flex max-h-[92vh] flex-col">
+    <header class="flex items-center justify-between gap-4 border-b border-slate-200 px-5 py-3 dark:border-slate-800">
+      <h2 id="portfolio-modal-title" class="text-lg font-semibold text-slate-900 dark:text-white"></h2>
+      <button
+        type="button"
+        id="portfolio-modal-close"
+        class="flex h-9 w-9 items-center justify-center rounded-full text-slate-600 transition hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
+        aria-label={ui.labels.close}
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5" aria-hidden="true">
+          <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </header>
+    <div class="relative flex min-h-0 flex-1 items-center justify-center bg-slate-100 p-10 dark:bg-slate-950">
+      <button type="button" id="portfolio-modal-prev" class={`absolute left-3 ${navButton}`} aria-label={ui.labels.previous}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6" />
+        </svg>
+      </button>
+      <img id="portfolio-modal-image" src="" alt="" class="max-h-[70vh] max-w-full object-contain" />
+      <button type="button" id="portfolio-modal-next" class={`absolute right-3 ${navButton}`} aria-label={ui.labels.next}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6" />
+        </svg>
+      </button>
+    </div>
+    <footer class="border-t border-slate-200 px-5 py-4 dark:border-slate-800">
+      <p
+        id="portfolio-modal-description"
+        class="max-h-[25vh] overflow-y-auto text-sm text-slate-600 dark:text-slate-400"
+      ></p>
+    </footer>
+  </div>
+</dialog>
+
+<script is:inline>
+  (function () {
+    const modal = document.getElementById('portfolio-modal');
+    if (!modal) return;
+    const img = document.getElementById('portfolio-modal-image');
+    const title = document.getElementById('portfolio-modal-title');
+    const desc = document.getElementById('portfolio-modal-description');
+    const closeBtn = document.getElementById('portfolio-modal-close');
+    const prevBtn = document.getElementById('portfolio-modal-prev');
+    const nextBtn = document.getElementById('portfolio-modal-next');
+    let images = [];
+    let index = 0;
+    let lastFocused = null;
+    function show(i) {
+      if (!images.length) return;
+      index = (i + images.length) % images.length;
+      img.src = images[index];
+      const single = images.length < 2;
+      prevBtn.hidden = single;
+      nextBtn.hidden = single;
+    }
+    function open(data) {
+      title.textContent = data.title || '';
+      desc.textContent = data.description || '';
+      images = data.images || [];
+      index = 0;
+      img.alt = data.title || '';
+      img.hidden = !images.length;
+      if (images.length) show(0);
+      if (typeof modal.showModal === 'function') modal.showModal();
+      else modal.setAttribute('open', '');
+    }
+    function openFromCard(card) {
+      lastFocused = document.activeElement;
+      open({
+        title: card.dataset.title,
+        description: card.dataset.description,
+        images: JSON.parse(card.dataset.images || '[]'),
+      });
+    }
+    document.addEventListener('click', (e) => {
+      const card = e.target.closest('[data-portfolio-item]');
+      if (card) openFromCard(card);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (modal.open) return;
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      const card = e.target.closest('[data-portfolio-item]');
+      if (!card) return;
+      e.preventDefault();
+      openFromCard(card);
+    });
+    closeBtn.addEventListener('click', () => modal.close());
+    prevBtn.addEventListener('click', () => show(index - 1));
+    nextBtn.addEventListener('click', () => show(index + 1));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+    modal.addEventListener('close', () => {
+      if (lastFocused && lastFocused.isConnected) lastFocused.focus();
+      lastFocused = null;
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!modal.open) return;
+      if (e.key === 'Escape') modal.close();
+      if (e.key === 'ArrowLeft') show(index - 1);
+      if (e.key === 'ArrowRight') show(index + 1);
+    });
+  })();
+</script>

@@ -9,7 +9,6 @@ export const en: UI = {
   nav: {
     portfolio: 'Portfolio',
     resumes: 'Resumes',
-    projects: 'Projects',
     contacts: 'Contacts',
   },
   hero: {
@@ -21,7 +20,6 @@ export const en: UI = {
   sections: {
     about: 'About',
     resumes: 'Resumes',
-    projects: 'Selected projects',
     achievements: 'Key achievements',
     whyMe: 'Why I strengthen your team',
     experience: 'Experience',
@@ -34,7 +32,6 @@ export const en: UI = {
   labels: {
     keyTech: 'Key technologies',
     stack: 'Stack',
-    selectedProjects: 'Selected projects',
     allResumes: 'All resumes',
     backToPortfolio: 'Back to portfolio',
     print: 'Print / PDF',
@@ -47,6 +44,10 @@ export const en: UI = {
     github: 'GitHub',
     highlights: 'Key results',
     openResume: 'Open resume',
+    openPortfolio: 'open in portfolio',
+    close: 'Close',
+    previous: 'Previous image',
+    next: 'Next image',
     skipToContent: 'Skip to content',
   },
   theme: {

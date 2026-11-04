@@ -2,7 +2,7 @@
 import type { Locale } from '../types/content';
 import { getUI } from '../i18n';
 import { getProfile } from '../lib/data';
-import { homePath, pick } from '../lib/paths';
+import { homePath, pick, withBase } from '../lib/paths';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import ThemeToggle from './ThemeToggle.astro';
 
@@ -19,11 +19,12 @@ const initials = name
   .split(/\s+/)
   .map((part) => part[0])
   .join('');
+const photo = profile.photo;
+const photoSrc = photo ? withBase(photo) : null;
 
 const links = [
   { href: home, label: ui.nav.portfolio, className: '' },
   { href: `${home}#resumes`, label: ui.nav.resumes, className: '' },
-  { href: `${home}#projects`, label: ui.nav.projects, className: 'hidden md:inline-flex' },
   { href: `${home}#contacts`, label: ui.nav.contacts, className: 'hidden sm:inline-flex' },
 ];
 ---
@@ -36,10 +37,22 @@ const links = [
       href={home}
       class="flex items-center gap-2 text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-500 dark:text-white"
     >
-      <span
-        class="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500 text-sm font-bold text-slate-950"
-        aria-hidden="true">{initials}</span
-      >
+      {
+        photoSrc ? (
+          <img
+            src={photoSrc}
+            alt={name}
+            class="h-9 w-9 rounded-xl object-cover"
+            width="36"
+            height="36"
+          />
+        ) : (
+          <span
+            class="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500 text-sm font-bold text-slate-950"
+            aria-hidden="true">{initials}</span
+          >
+        )
+      }
       <span class="hidden text-sm font-semibold sm:block">{name}</span>
     </a>
 

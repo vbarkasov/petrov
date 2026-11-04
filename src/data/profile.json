@@ -42,7 +42,7 @@
       "url": "https://github.com/vbarkasov"
     }
   },
-  "photo": null,
+  "photo": "/photo.jpg",
   "defaultLocale": "ru",
   "locales": [
     "ru",

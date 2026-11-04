@@ -9,7 +9,6 @@ export const ru: UI = {
   nav: {
     portfolio: 'Портфолио',
     resumes: 'Резюме',
-    projects: 'Проекты',
     contacts: 'Контакты',
   },
   hero: {
@@ -21,7 +20,6 @@ export const ru: UI = {
   sections: {
     about: 'Обо мне',
     resumes: 'Резюме',
-    projects: 'Избранные проекты',
     achievements: 'Ключевые достижения',
     whyMe: 'Почему я — усиление для команды',
     experience: 'Опыт работы',
@@ -34,7 +32,6 @@ export const ru: UI = {
   labels: {
     keyTech: 'Ключевые технологии',
     stack: 'Стек',
-    selectedProjects: 'Избранные проекты',
     allResumes: 'Все резюме',
     backToPortfolio: 'В портфолио',
     print: 'Печать / PDF',
@@ -47,6 +44,10 @@ export const ru: UI = {
     github: 'GitHub',
     highlights: 'Ключевые результаты',
     openResume: 'Открыть резюме',
+    openPortfolio: 'открыть в портфолио',
+    close: 'Закрыть',
+    previous: 'Предыдущее изображение',
+    next: 'Следующее изображение',
     skipToContent: 'Перейти к содержимому',
   },
   theme: {

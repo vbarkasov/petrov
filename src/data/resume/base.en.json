@@ -23,7 +23,8 @@
     "Migration of legacy code to modern stacks.",
     "Performance engineering (Lighthouse, bundle optimisation).",
     "Adoption of E2E testing (Playwright) in development pipelines.",
-    "Integration of AI tools (Claude, OpenAI, DeepSeek) into workflows."
+    "Integration of AI tools (Claude, OpenAI, DeepSeek) into workflows.",
+    "Using AI agents (Claude Code, Cursor, DeepSeek Coder, Copilot) to accelerate the SDLC: refactoring legacy code, generating and covering with tests, debugging, documentation generation, automated code review, and exploring solutions in Vibe Coding mode."
   ],
   "experience": [
     {
@@ -48,12 +49,20 @@
             "Optimised rendering of tables with 10,000+ rows — interface response time reduced by 40%.",
             "Introduced E2E testing (Playwright) into the CI/CD pipeline, cutting critical release bugs by 25%.",
             "Built a dynamic module loading system that reduced the initial bundle size by 30%."
+          ],
+          "previewImage": "/static/portfolio/2024-skladolog/001.png",
+          "images": [
+            "/static/portfolio/2024-skladolog/001.png",
+            "/static/portfolio/2024-skladolog/002.png",
+            "/static/portfolio/2024-skladolog/003.png",
+            "/static/portfolio/2024-skladolog/004.png",
+            "/static/portfolio/2024-skladolog/005.png"
           ]
         },
         {
           "id": "fabrika-oteley",
           "name": "Hotel Factory",
-          "description": "B2B supplier catalogue",
+          "description": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR).",
           "stack": [
             "Vue 3",
             "Quasar (SSR)",
@@ -64,6 +73,16 @@
             "Delivered an SSR solution for SEO promotion of the catalogue.",
             "Built a universal filtering system with dynamic parameters (up to 50+ filters at once) — user retention on the search page increased 1.5x (Yandex.Metrica data).",
             "Configured page caching at the Nginx level, reducing TTFB by 60%."
+          ],
+          "previewImage": "/static/portfolio/2024-fabrika/001.png",
+          "images": [
+            "/static/portfolio/2024-fabrika/001.png",
+            "/static/portfolio/2024-fabrika/002.png",
+            "/static/portfolio/2024-fabrika/003.png",
+            "/static/portfolio/2024-fabrika/004.png",
+            "/static/portfolio/2024-fabrika/005.png",
+            "/static/portfolio/2024-fabrika/006.png",
+            "/static/portfolio/2024-fabrika/007.png"
           ]
         },
         {
@@ -82,7 +101,7 @@
         {
           "id": "crm-b2b-services",
           "name": "B2B CRM for business services",
-          "description": "CRM platform for managing services for B2B clients",
+          "description": "Customer Relationship Management (CRM) is a system used to manage customer interactions and data.",
           "stack": [
             "Nuxt 4",
             "TypeScript",
@@ -91,12 +110,22 @@
           ],
           "achievements": [
             "Implemented several large project modules completely from scratch."
+          ],
+          "previewImage": "/static/portfolio/2022-crm/000.png",
+          "images": [
+            "/static/portfolio/2022-crm/001.png",
+            "/static/portfolio/2022-crm/002.png",
+            "/static/portfolio/2022-crm/003.png",
+            "/static/portfolio/2022-crm/004.png",
+            "/static/portfolio/2022-crm/005.png",
+            "/static/portfolio/2022-crm/006.png",
+            "/static/portfolio/2022-crm/007.png"
           ]
         },
         {
           "id": "corgi",
           "name": "Corgi",
-          "description": "Browser extension for language learning",
+          "description": "The browser extension allows you to learn foreign words when you surf the internet.",
           "stack": [
             "React",
             "TypeScript",
@@ -107,12 +136,30 @@
             "Performed a full legacy refactor (plain JS → modular architecture on React + TypeScript).",
             "Integrated speech synthesis (Web Speech API) and a contextual hint system based on word frequency.",
             "Daily active users grew by 30% (internal analytics data)."
+          ],
+          "previewImage": "/static/portfolio/2022-corgi/000.png",
+          "images": [
+            "/static/portfolio/2022-corgi/001.png",
+            "/static/portfolio/2022-corgi/002.png",
+            "/static/portfolio/2022-corgi/003.png",
+            "/static/portfolio/2022-corgi/004.png",
+            "/static/portfolio/2022-corgi/005.png",
+            "/static/portfolio/2022-corgi/006.png",
+            "/static/portfolio/2022-corgi/007.png",
+            "/static/portfolio/2022-corgi/008.png",
+            "/static/portfolio/2022-corgi/009.png",
+            "/static/portfolio/2022-corgi/010.png",
+            "/static/portfolio/2022-corgi/011.png",
+            "/static/portfolio/2022-corgi/012.png",
+            "/static/portfolio/2022-corgi/013.png",
+            "/static/portfolio/2022-corgi/014.png",
+            "/static/portfolio/2022-corgi/015.png"
           ]
         },
         {
           "id": "chat-widget",
           "name": "Internal CRM chat widget (MVP)",
-          "description": "Live chat widget with message history",
+          "description": "Fully featured chat for the CRM",
           "stack": [
             "React",
             "WebSocket",
@@ -122,6 +169,14 @@
           "achievements": [
             "Built a widget with a live connection and message history.",
             "Integrated it into the existing CRM in 2 weeks with zero downtime (feature flags and a staged rollout)."
+          ],
+          "previewImage": "/static/portfolio/2022-crm-chat/000.png",
+          "images": [
+            "/static/portfolio/2022-crm-chat/001.png",
+            "/static/portfolio/2022-crm-chat/002.png",
+            "/static/portfolio/2022-crm-chat/003.png",
+            "/static/portfolio/2022-crm-chat/004.png",
+            "/static/portfolio/2022-crm-chat/005.png"
           ]
         }
       ]

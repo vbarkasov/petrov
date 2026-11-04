@@ -1,0 +1,53 @@
+---
+import type { Locale } from '../types/content';
+import { withBase } from '../lib/paths';
+import { getUI } from '../i18n';
+import type { PortfolioItem } from '../types/content';
+
+interface Props {
+  item: PortfolioItem;
+  locale: Locale;
+}
+
+const { item, locale } = Astro.props;
+const ui = getUI(locale);
+const title = item.title[locale];
+const description = item.description[locale];
+const preview = item.previewImage ?? item.images?.[0];
+const images = (item.images ?? []).map((src) => withBase(src));
+const features = item.features.map((f) => f[locale]);
+---
+
+<article
+  class="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:border-slate-800 dark:bg-slate-900/60 dark:hover:border-emerald-700"
+  role="button"
+  tabindex="0"
+  aria-label={`${title} — ${ui.labels.openPortfolio}`}
+  data-portfolio-item
+  data-title={title}
+  data-description={description}
+  data-images={JSON.stringify(images)}
+  data-features={JSON.stringify(features)}
+>
+  <div class="bg-slate-100 dark:bg-slate-950">
+    {preview ? (
+      <img
+        src={withBase(preview)}
+        alt={title}
+        loading="lazy"
+        class="aspect-video w-full object-cover"
+      />
+    ) : (
+      <div class="aspect-video w-full"></div>
+    )}
+  </div>
+  <div class="flex flex-1 flex-col gap-1 p-5">
+    <h3 class="text-base font-semibold text-slate-900 dark:text-white">{title}</h3>
+    <p class="text-sm text-slate-600 dark:text-slate-400">{description}</p>
+    {item.timeText && (
+      <p class="mt-auto pt-3 font-mono text-xs text-slate-500 dark:text-slate-400">
+        {item.timeText}
+      </p>
+    )}
+  </div>
+</article>

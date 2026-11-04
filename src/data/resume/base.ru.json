@@ -23,7 +23,8 @@
     "Миграция легаси-кода на современные стеки.",
     "Настройка производительности (Lighthouse, оптимизация бандлов).",
     "Внедрение E2E-тестирования (Playwright) в пайплайны разработки.",
-    "Интеграция AI-инструментов (Claude, OpenAI, DeepSeek) в рабочие процессы."
+    "Интеграция AI-инструментов (Claude, OpenAI, DeepSeek) в рабочие процессы.",
+    "Использование ИИ-агентов (Claude Code, Cursor, DeepSeek Coder, Copilot) для ускорения SDLC: рефакторинг легаси-кода, генерация и покрытие тестами, отладка, генерация документации, автоматизация код-ревью и исследование решений в режиме Vibe Coding."
   ],
   "experience": [
     {
@@ -48,12 +49,20 @@
             "Оптимизировал рендеринг таблиц с 10 000+ строк — время отклика интерфейса снижено на 40%.",
             "Внедрил E2E-тестирование (Playwright) в CI/CD-пайплайн, что сократило количество критических багов в релизах на 25%.",
             "Разработал систему динамической подгрузки модулей, уменьшив размер первоначального бандла на 30%."
+          ],
+          "previewImage": "/static/portfolio/2024-skladolog/001.png",
+          "images": [
+            "/static/portfolio/2024-skladolog/001.png",
+            "/static/portfolio/2024-skladolog/002.png",
+            "/static/portfolio/2024-skladolog/003.png",
+            "/static/portfolio/2024-skladolog/004.png",
+            "/static/portfolio/2024-skladolog/005.png"
           ]
         },
         {
           "id": "fabrika-oteley",
           "name": "«Фабрика отелей»",
-          "description": "B2B-каталог поставщиков",
+          "description": "Реализовал большую часть клиентской части приложения на Quasar framework (Vue 3 + SSR).",
           "stack": [
             "Vue 3",
             "Quasar (SSR)",
@@ -64,6 +73,16 @@
             "Реализовал SSR-решение для SEO-продвижения каталога.",
             "Разработал универсальную систему фильтрации с динамическими параметрами (до 50+ фильтров одновременно) — удержание пользователей на странице поиска выросло в 1,5 раза (данные Яндекс.Метрики).",
             "Настроил кеширование страниц на уровне Nginx, сократив время загрузки TTFB на 60%."
+          ],
+          "previewImage": "/static/portfolio/2024-fabrika/001.png",
+          "images": [
+            "/static/portfolio/2024-fabrika/001.png",
+            "/static/portfolio/2024-fabrika/002.png",
+            "/static/portfolio/2024-fabrika/003.png",
+            "/static/portfolio/2024-fabrika/004.png",
+            "/static/portfolio/2024-fabrika/005.png",
+            "/static/portfolio/2024-fabrika/006.png",
+            "/static/portfolio/2024-fabrika/007.png"
           ]
         },
         {
@@ -82,7 +101,7 @@
         {
           "id": "crm-b2b-services",
           "name": "CRM B2B-система для управления услугами бизнеса",
-          "description": "CRM-платформа для управления услугами B2B-клиентов",
+          "description": "CRM (система управления взаимоотношениями с клиентами) — система, используемая для управления взаимодействиями и данными клиентов.",
           "stack": [
             "Nuxt 4",
             "TypeScript",
@@ -91,12 +110,22 @@
           ],
           "achievements": [
             "Реализовал полностью несколько крупных модулей проекта с нуля."
+          ],
+          "previewImage": "/static/portfolio/2022-crm/000.png",
+          "images": [
+            "/static/portfolio/2022-crm/001.png",
+            "/static/portfolio/2022-crm/002.png",
+            "/static/portfolio/2022-crm/003.png",
+            "/static/portfolio/2022-crm/004.png",
+            "/static/portfolio/2022-crm/005.png",
+            "/static/portfolio/2022-crm/006.png",
+            "/static/portfolio/2022-crm/007.png"
           ]
         },
         {
           "id": "corgi",
           "name": "«Corgi»",
-          "description": "Браузерное расширение для изучения языков",
+          "description": "Браузерное расширение для изучения иностранных слов при серфинге в интернете",
           "stack": [
             "React",
             "TypeScript",
@@ -107,12 +136,30 @@
             "Провёл полный рефакторинг легаси-кода (чистый JS → модульная архитектура на React + TypeScript).",
             "Интегрировал синтез речи (Web Speech API) и систему контекстных подсказок на основе частотности слов.",
             "Ежедневная активность пользователей выросла на 30% (данные внутренней аналитики)."
+          ],
+          "previewImage": "/static/portfolio/2022-corgi/000.png",
+          "images": [
+            "/static/portfolio/2022-corgi/001.png",
+            "/static/portfolio/2022-corgi/002.png",
+            "/static/portfolio/2022-corgi/003.png",
+            "/static/portfolio/2022-corgi/004.png",
+            "/static/portfolio/2022-corgi/005.png",
+            "/static/portfolio/2022-corgi/006.png",
+            "/static/portfolio/2022-corgi/007.png",
+            "/static/portfolio/2022-corgi/008.png",
+            "/static/portfolio/2022-corgi/009.png",
+            "/static/portfolio/2022-corgi/010.png",
+            "/static/portfolio/2022-corgi/011.png",
+            "/static/portfolio/2022-corgi/012.png",
+            "/static/portfolio/2022-corgi/013.png",
+            "/static/portfolio/2022-corgi/014.png",
+            "/static/portfolio/2022-corgi/015.png"
           ]
         },
         {
           "id": "chat-widget",
           "name": "Внутренний чат-виджет для CRM (MVP)",
-          "description": "Виджет живого чата с историей сообщений",
+          "description": "Полнофункциональный чат для CRM",
           "stack": [
             "React",
             "WebSocket",
@@ -122,6 +169,373 @@
           "achievements": [
             "Разработал виджет с живым соединением и историей сообщений.",
             "Интегрировал в существующую CRM-систему за 2 недели без даунтайма (feature-флаги и поэтапный rollout)."
+          ],
+          "previewImage": "/static/portfolio/2022-crm-chat/000.png",
+          "images": [
+            "/static/portfolio/2022-crm-chat/001.png",
+            "/static/portfolio/2022-crm-chat/002.png",
+            "/static/portfolio/2022-crm-chat/003.png",
+            "/static/portfolio/2022-crm-chat/004.png",
+            "/static/portfolio/2022-crm-chat/005.png"
+          ]
+        },
+        {
+          "id": "alfa-bank-jbzoo-payment-module",
+          "name": "Модуль оплаты Alfa Bank для Joomla 3",
+          "description": "Модуль оплаты для компонента JBZoo в CMS Joomla 3",
+          "stack": [
+            "PHP",
+            "JBZoo",
+            "Joomla",
+            "Alfa Bank",
+            "E-commerce",
+            "Module"
+          ],
+          "achievements": [
+            "Возможность оплаты в интернет-магазине через Альфа-Банк"
+          ],
+          "previewImage": "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
+          "images": [
+            "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
+            "/static/portfolio/2016-alfabank-jbzoo-payment-module/screen_01.png"
+          ]
+        },
+        {
+          "id": "monster-ui-addressbooks",
+          "name": "Address Books",
+          "description": "SIP-приложение для фреймворка Monster UI",
+          "stack": [
+            "Monster UI",
+            "SIP",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Управление адресными книгами"
+          ],
+          "previewImage": "/static/portfolio/2018-monster-ui-addressbooks/screen001_preview.png",
+          "images": [
+            "/static/portfolio/2018-monster-ui-addressbooks/screen001.png"
+          ]
+        },
+        {
+          "id": "bitcoin-browser-extension",
+          "name": "Bitcoin Browser Extension",
+          "description": "Браузерное расширение для Google Chrome и Firefox.",
+          "stack": [
+            "Chrome",
+            "Extension",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Отображение графика курса выбранного периода",
+            "Расчёт стоимости одной валюты в другой (калькулятор валют)",
+            "Отображение текущего биткоин-курса в одной из 20 валют мира на иконке"
+          ],
+          "previewImage": "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
+          "images": [
+            "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
+            "/static/portfolio/2017-bitcoin-browser-extension/screen002.png",
+            "/static/portfolio/2017-bitcoin-browser-extension/screen003.png"
+          ]
+        },
+        {
+          "id": "kinopoisk-torrent-search",
+          "name": "Kinopoisk Torrent Search",
+          "description": "Расширение для браузера, которое добавляет кнопку T рядом с названием фильма на сайте Kinopoisk.",
+          "stack": [
+            "Chrome",
+            "Extension",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Torrent"
+          ],
+          "achievements": [
+            "Быстрый поиск торрентов"
+          ],
+          "previewImage": "/static/portfolio/2017-kinopoisk-torrent-search/screen.png",
+          "images": [
+            "/static/portfolio/2017-kinopoisk-torrent-search/screen.png"
+          ]
+        },
+        {
+          "id": "disallow-ads-vk-com",
+          "name": "Disallow Ads in VK",
+          "description": "Расширение для Google Chrome, которое запрещает показ рекламы в социальной сети VK.",
+          "stack": [
+            "Chrome",
+            "Extension",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "VK",
+            "Ads"
+          ],
+          "achievements": [
+            "Запрещает показ рекламы в баннерах",
+            "Запрещает показ рекламы в постах",
+            "Запрещает показ рекламы в аудио"
+          ],
+          "previewImage": "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
+          "images": [
+            "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
+            "/static/portfolio/2018-ubrat-reklamu-vk/screen_002.png"
+          ]
+        },
+        {
+          "id": "child-products-statistics",
+          "name": "Child Products Statistics Website",
+          "description": "Веб-сайт со статистическими данными о товарах для детей с графиками.",
+          "stack": [
+            "Vue",
+            "Vuex",
+            "Vuetify",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Красивые графики",
+            "Интерактивность",
+            "Адаптивный вид",
+            "Минималистичный дизайн"
+          ],
+          "previewImage": "/static/portfolio/2018-child-products/screen_preview.png",
+          "images": [
+            "/static/portfolio/2018-child-products/screen_001.png",
+            "/static/portfolio/2018-child-products/screen_002.png",
+            "/static/portfolio/2018-child-products/screen_003.png"
+          ]
+        },
+        {
+          "id": "vbarkasov-portfolio-site",
+          "name": "Portfolio Site",
+          "description": "Сайт-портфолио веб-разработчика.",
+          "stack": [
+            "Vue",
+            "Vuex",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Быстрый",
+            "Простой",
+            "Удобный",
+            "Адаптивный вид",
+            "Минималистичный дизайн"
+          ],
+          "previewImage": "/static/portfolio/2018-portfolio-site/screen_001.png",
+          "images": [
+            "/static/portfolio/2018-portfolio-site/screen_001.png",
+            "/static/portfolio/2018-portfolio-site/screen_002.png",
+            "/static/portfolio/2018-portfolio-site/screen_003.png",
+            "/static/portfolio/2018-portfolio-site/screen_004.png"
+          ]
+        },
+        {
+          "id": "infinity-resources",
+          "name": "Infinity Resources",
+          "description": "В задачи входили добавление новых функций и исправление багов.",
+          "stack": [
+            "Vue",
+            "Vuex",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Интерактивность",
+            "Адаптивность",
+            "Минималистичный дизайн"
+          ],
+          "previewImage": "/static/portfolio/2019-infinity-resources/screen_preview.jpg",
+          "images": [
+            "/static/portfolio/2019-infinity-resources/screen_001.png",
+            "/static/portfolio/2019-infinity-resources/screen_002.png",
+            "/static/portfolio/2019-infinity-resources/screen_003.png",
+            "/static/portfolio/2019-infinity-resources/screen_004.png"
+          ]
+        },
+        {
+          "id": "cashback-browser-extension",
+          "name": "Cashback Extension for Browsers",
+          "description": "Сервис кэшбэка, который помогает совершать выгодные покупки в интернете.",
+          "stack": [
+            "Cashback",
+            "Chrome",
+            "Firefox",
+            "Extension",
+            "Addon",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Создаёт кэшбэк на партнёрских сайтах",
+            "Показывает купоны на партнёрских страницах",
+            "Показывает push-уведомления",
+            "Показывает всплывающее окно со списком партнёрских сайтов",
+            "Авторизация"
+          ],
+          "previewImage": "/static/portfolio/2019-cashback-extension/screen_preview.jpg",
+          "images": [
+            "/static/portfolio/2019-cashback-extension/screen_001.png",
+            "/static/portfolio/2019-cashback-extension/screen_002.png",
+            "/static/portfolio/2019-cashback-extension/screen_003.png"
+          ]
+        },
+        {
+          "id": "joxi-browser-extension",
+          "name": "Joxi",
+          "description": "В задачи входило редизайн расширения и добавление новой функциональности.",
+          "stack": [
+            "Chrome",
+            "Firefox",
+            "Opera",
+            "Extension",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Screenshot"
+          ],
+          "achievements": [
+            "Создание скриншотов страниц",
+            "Редактирование скриншотов",
+            "Сохранение скриншотов в облако и на жёсткий диск"
+          ],
+          "previewImage": "/static/portfolio/2020-joxi/screen_preview.png",
+          "images": [
+            "/static/portfolio/2020-joxi/screen_001.png",
+            "/static/portfolio/2020-joxi/screen_002.png",
+            "/static/portfolio/2020-joxi/screen_003.png",
+            "/static/portfolio/2020-joxi/screen_004.png",
+            "/static/portfolio/2020-joxi/screen_005.png",
+            "/static/portfolio/2020-joxi/screen_006.png",
+            "/static/portfolio/2020-joxi/screen_007.png",
+            "/static/portfolio/2020-joxi/screen_008.png",
+            "/static/portfolio/2020-joxi/screen_009.png",
+            "/static/portfolio/2020-joxi/screen_010.png",
+            "/static/portfolio/2020-joxi/screen_011.png"
+          ]
+        },
+        {
+          "id": "bitcoin-exchange-service",
+          "name": "Bitcoin Exchange Service",
+          "description": "Сервис позволяет быстро заказать обмен одной валюты на другую. Суммы обмена автоматически рассчитываются.",
+          "stack": [
+            "Vue",
+            "Vuex",
+            "JavaScript",
+            "HTML",
+            "SCSS",
+            "Bitcoin",
+            "Cryptocurrency",
+            "Exchange"
+          ],
+          "achievements": [
+            "Актуальные курсы обмена",
+            "Минималистичный дизайн",
+            "Высокая скорость",
+            "Дружелюбный интерфейс"
+          ],
+          "previewImage": "/static/portfolio/2021-bitexchange/001.png",
+          "images": [
+            "/static/portfolio/2021-bitexchange/001.png"
+          ]
+        },
+        {
+          "id": "web-service-ads-telegram",
+          "name": "Web Service for Managing Ads in Telegram",
+          "description": "Участие в создании сервиса для управления рекламой в Telegram-каналах для администраторов и рекламодателей.",
+          "stack": [
+            "Vue",
+            "Vuex",
+            "JavaScript",
+            "HTML",
+            "SCSS",
+            "Telegram",
+            "Ads"
+          ],
+          "achievements": [],
+          "previewImage": "/static/portfolio/2021-admint/001.jpg",
+          "images": [
+            "/static/portfolio/2021-admint/001.jpg",
+            "/static/portfolio/2021-admint/002.jpg",
+            "/static/portfolio/2021-admint/003.jpg",
+            "/static/portfolio/2021-admint/004.jpg",
+            "/static/portfolio/2021-admint/005.jpg",
+            "/static/portfolio/2021-admint/006.jpg"
+          ]
+        },
+        {
+          "id": "crm-chat",
+          "name": "Chat for CRM",
+          "description": "Полнофункциональный чат для CRM",
+          "stack": [
+            "Vue",
+            "Vue3",
+            "Vuetify",
+            "Composition API",
+            "CRM",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [],
+          "previewImage": "/static/portfolio/2022-crm-chat/000.png",
+          "images": [
+            "/static/portfolio/2022-crm-chat/000.png",
+            "/static/portfolio/2022-crm-chat/001.png",
+            "/static/portfolio/2022-crm-chat/002.png",
+            "/static/portfolio/2022-crm-chat/003.png",
+            "/static/portfolio/2022-crm-chat/004.png",
+            "/static/portfolio/2022-crm-chat/005.png"
+          ]
+        },
+        {
+          "id": "change-design-ecommerce-site-ocean-krasoty",
+          "name": "Изменение дизайна интернет-магазина Ocean Krasoty",
+          "description": "Изменение дизайна интернет-магазина Ocean Krasoty",
+          "stack": [
+            "Netcat",
+            "PHP",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [],
+          "previewImage": "/static/portfolio/2016-ocean/preview.jpg",
+          "images": [
+            "/static/portfolio/2016-ocean/preview.jpg",
+            "/static/portfolio/2016-ocean/001.png",
+            "/static/portfolio/2016-ocean/002.jpg",
+            "/static/portfolio/2016-ocean/003.jpg"
+          ]
+        },
+        {
+          "id": "admin-interface-ecommerce-site",
+          "name": "Admin Interface for Ecommerce Site",
+          "description": "Custom user interface for the ecommerce site",
+          "stack": [
+            "Yii2",
+            "Ecommerce",
+            "PHP",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "achievements": [
+            "Two-column view",
+            "Orders tabs",
+            "Calculation of the total sum"
+          ],
+          "previewImage": "/static/portfolio/2016-magix-admin-ui/001.png",
+          "images": [
+            "/static/portfolio/2016-magix-admin-ui/001.png"
           ]
         }
       ]

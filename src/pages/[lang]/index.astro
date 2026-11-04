@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContactLinks from '../../components/ContactLinks.astro';
-import ProjectCard from '../../components/ProjectCard.astro';
+import PortfolioCard from '../../components/PortfolioCard.astro';
+import PortfolioModal from '../../components/PortfolioModal.astro';
 import ResumeCard from '../../components/ResumeCard.astro';
 import { getUI } from '../../i18n';
-import { getProfile, getResume, getVariants } from '../../lib/data';
-import { homePath, pick } from '../../lib/paths';
+import { getProfile, getPortfolio, getResume, getVariants } from '../../lib/data';
+import { homePath, pick, withBase } from '../../lib/paths';
 import type { Locale } from '../../types/content';
 
 export function getStaticPaths() {
@@ -21,11 +22,13 @@ const variants = getVariants();
 const name = pick(profile.name, locale);
 const roles = profile.roles[locale];
 const home = homePath(locale);
-const projects = resume.experience.flatMap((entry) => entry.projects ?? []);
+const portfolio = getPortfolio();
 const initials = name
   .split(/\s+/)
   .map((part) => part[0])
   .join('');
+const photo = profile.photo;
+const photoSrc = photo ? withBase(photo) : null;
 ---
 
 <BaseLayout locale={locale} description={resume.about}>
@@ -36,12 +39,22 @@ const initials = name
     </div>
     <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
       <div class="grid items-start gap-10 md:grid-cols-[auto_1fr]">
-        <div
-          class="flex h-24 w-24 items-center justify-center rounded-3xl bg-emerald-500 text-3xl font-bold text-slate-950 shadow-lg shadow-emerald-500/20"
-          aria-hidden="true"
-        >
-          {initials}
-        </div>
+        {photoSrc ? (
+          <img
+            src={photoSrc}
+            alt={name}
+            class="h-24 w-24 rounded-3xl object-cover shadow-lg shadow-emerald-500/20"
+            width="96"
+            height="96"
+          />
+        ) : (
+          <div
+            class="flex h-24 w-24 items-center justify-center rounded-3xl bg-emerald-500 text-3xl font-bold text-slate-950 shadow-lg shadow-emerald-500/20"
+            aria-hidden="true"
+          >
+            {initials}
+          </div>
+        )}
 
         <div>
           <p
@@ -136,21 +149,16 @@ const initials = name
     </div>
   </section>
 
-  <section id="projects" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+  <section id="portfolio" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
     <div class="max-w-2xl">
-      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">{ui.sections.projects}</h2>
-      <p class="mt-3 text-slate-600 dark:text-slate-400">{ui.labels.keyTech}</p>
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Portfolio</h2>
     </div>
-
     <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-      {
-        projects.map((project) => (
-          <ProjectCard project={project} locale={locale} />
-        ))
-      }
+      {portfolio.map((item) => (
+        <PortfolioCard item={item} locale={locale} />
+      ))}
     </div>
   </section>
-
   <section
     id="achievements"
     class="border-y border-slate-200 bg-white/60 dark:border-slate-800 dark:bg-slate-900/30"
@@ -199,4 +207,5 @@ const initials = name
       </div>
     </div>
   </section>
+  <PortfolioModal locale={locale} />
 </BaseLayout>

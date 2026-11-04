@@ -51,6 +51,33 @@ export interface Project {
   description: string;
   stack: string[];
   achievements: string[];
+  previewImage?: string;
+  images?: string[];
+}
+
+
+export interface LocalizedText {
+  ru: string;
+  en: string;
+}
+
+export interface PortfolioLink {
+  title: string;
+  href: string;
+  icon?: string[];
+}
+
+export interface PortfolioItem {
+  id: string;
+  slug: string;
+  title: LocalizedText;
+  description: LocalizedText;
+  features: LocalizedText[];
+  timeText: string;
+  previewImage: string;
+  images: string[];
+  tags: string[];
+  links?: PortfolioLink[];
 }
 
 export interface ExperienceEntry {
