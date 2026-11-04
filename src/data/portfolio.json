@@ -2,6 +2,43 @@
   "schemaVersion": 1,
   "items": [
     {
+      "id": "021",
+      "slug": "samotsvet",
+      "title": {
+        "ru": "«Радуга Самоцветов»",
+        "en": "Raduga Samotsvetov"
+      },
+      "description": {
+        "ru": "Интернет-магазин украшений из натурального камня на 1С-Битрикс.",
+        "en": "Natural stone jewellery online store built on 1C-Bitrix."
+      },
+      "features": [],
+      "timeText": {
+        "ru": "2026",
+        "en": "2026"
+      },
+      "previewImage": "/static/portfolio/2026-samotsvet/001.jpg",
+      "images": [
+        "/static/portfolio/2026-samotsvet/001.jpg",
+        "/static/portfolio/2026-samotsvet/002.jpg",
+        "/static/portfolio/2026-samotsvet/003.jpg",
+        "/static/portfolio/2026-samotsvet/004.jpg",
+        "/static/portfolio/2026-samotsvet/005.jpg"
+      ],
+      "tags": [
+        "1С-Битрикс",
+        "PHP",
+        "JavaScript",
+        "E-commerce"
+      ],
+      "links": [
+        {
+          "title": "samotsvet.ru",
+          "href": "https://samotsvet.ru/"
+        }
+      ]
+    },
+    {
       "id": "001",
       "slug": "skladolog",
       "title": {
