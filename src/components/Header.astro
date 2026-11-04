@@ -23,7 +23,7 @@ const photo = profile.photo;
 const photoSrc = photo ? withBase(photo) : null;
 
 const links = [
-  { href: home, label: ui.nav.portfolio, className: '' },
+  { href: `${home}#portfolio`, label: ui.nav.portfolio, className: '' },
   { href: `${home}#resumes`, label: ui.nav.resumes, className: '' },
   { href: `${home}#contacts`, label: ui.nav.contacts, className: 'hidden sm:inline-flex' },
 ];

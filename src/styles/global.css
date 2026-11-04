@@ -22,6 +22,11 @@
   }
 }
 
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
 @media print {
   .no-print {
     display: none !important;
@@ -29,15 +34,63 @@
 
   body {
     background: #fff !important;
-    color: #000 !important;
+    color: #111827 !important;
+  }
+
+  main *,
+  header *,
+  footer * {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  li,
+  span,
+  a,
+  time {
+    color: #111827 !important;
   }
 
   a {
-    color: #000 !important;
     text-decoration: none !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  article section {
+    margin-top: 1.25rem !important;
   }
 
   .print-avoid-break {
     break-inside: avoid;
+    page-break-inside: avoid;
+    background: #fff !important;
+    border-color: #cbd5e1 !important;
+    padding: 0.75rem !important;
+  }
+
+  .print-flow {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .print-keep {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-avoid-break + .print-avoid-break {
+    margin-top: 0.75rem !important;
   }
 }

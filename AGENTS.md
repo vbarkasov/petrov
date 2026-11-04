@@ -236,7 +236,7 @@ Before committing, `npm run check` and `npm run build` must pass.
 - Astro components in `src/components/` and layouts in `src/layouts/`, PascalCase filenames.
 - Tailwind utility-first. Extract reusable class sets into components rather than long `@apply` blocks.
 - Dark mode is class-based: `@custom-variant dark` in `global.css`, toggled on `<html>`, bootstrapped inline in `BaseLayout` and stored in `localStorage` under `theme`.
-- Print styles use `.no-print` and `.print-avoid-break`; the resume page exposes a print/PDF button.
+- Print styles live in the `@page` / `@media print` block of `global.css`: `.no-print`, `.print-avoid-break`, `.print-keep`, `.print-flow`, A4 page setup and forced dark text. The resume page exposes a print/PDF button.
 - Prefer semantic HTML, correct heading order, labels, `alt` text, keyboard support and visible focus.
 - Mobile-first responsive layout; support system dark mode defaults.
 - Keep components small and data-agnostic; content variation belongs to data, not templates.
