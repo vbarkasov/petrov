@@ -80,11 +80,6 @@ export interface PortfolioItem {
   links?: PortfolioLink[];
 }
 
-export interface ResumeLink {
-  label: string;
-  url: string;
-}
-
 export interface ExperienceEntry {
   id: string;
   period: string;
@@ -117,7 +112,6 @@ export interface ResumeBase {
   education: EducationEntry[];
   keyAchievements: string[];
   whyMe: string[];
-  links: ResumeLink[];
 }
 
 export interface ResumeVariant {

@@ -26,7 +26,6 @@ export const en: UI = {
     experience: 'Experience',
     education: 'Education',
     contacts: 'Contacts',
-    links: 'Links and projects',
     competencies: 'Key competencies',
     stack: 'Technical stack',
   },

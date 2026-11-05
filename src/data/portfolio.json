@@ -5,12 +5,12 @@
       "id": "021",
       "slug": "samotsvet",
       "title": {
-        "ru": "«Радуга Самоцветов»",
-        "en": "Raduga Samotsvetov"
+        "ru": "Радуга Самоцветов — интернет-магазин украшений из камня",
+        "en": "Raduga Samotsvetov — natural stone jewellery store"
       },
       "description": {
-        "ru": "Интернет-магазин украшений из натурального камня на 1С-Битрикс.",
-        "en": "Natural stone jewellery online store built on 1C-Bitrix."
+        "ru": "1С-Битрикс: каталог украшений, подбор камня по знаку зодиака, энциклопедия и статьи.",
+        "en": "1C-Bitrix: jewellery catalogue, stone selection by zodiac sign, encyclopedia and articles."
       },
       "features": [],
       "timeText": {
@@ -39,15 +39,114 @@
       ]
     },
     {
+      "id": "022",
+      "slug": "fuel",
+      "title": {
+        "ru": "fuel+ — интернет-магазин plant-based добавок",
+        "en": "fuel+ — plant-based supplements store"
+      },
+      "description": {
+        "ru": "Каталог и коллекции добавок, бестселлеры, рецепты и подписка — магазин на WordPress.",
+        "en": "Product catalogue and collections, bestsellers, recipes and subscriptions — a WordPress store."
+      },
+      "features": [],
+      "timeText": {
+        "ru": "2026",
+        "en": "2026"
+      },
+      "previewImage": "/static/portfolio/2026-fuel/001.jpg",
+      "images": [
+        "/static/portfolio/2026-fuel/001.jpg",
+        "/static/portfolio/2026-fuel/002.jpg",
+        "/static/portfolio/2026-fuel/003.jpg",
+        "/static/portfolio/2026-fuel/004.jpg",
+        "/static/portfolio/2026-fuel/005.jpg"
+      ],
+      "tags": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "E-commerce"
+      ]
+    },
+    {
+      "id": "023",
+      "slug": "bagberry",
+      "title": {
+        "ru": "Bagberry — интернет-магазин сумок",
+        "en": "Bagberry — handbags online store"
+      },
+      "description": {
+        "ru": "Каталог и коллекции сумок, блог и подписка на рассылку — магазин на WordPress.",
+        "en": "Handbag catalogue and collections, blog and newsletter signup — a WordPress store."
+      },
+      "features": [],
+      "timeText": {
+        "ru": "2026",
+        "en": "2026"
+      },
+      "previewImage": "/static/portfolio/2026-bagberry/001.jpg",
+      "images": [
+        "/static/portfolio/2026-bagberry/001.jpg",
+        "/static/portfolio/2026-bagberry/002.jpg",
+        "/static/portfolio/2026-bagberry/003.jpg",
+        "/static/portfolio/2026-bagberry/004.jpg",
+        "/static/portfolio/2026-bagberry/005.jpg"
+      ],
+      "tags": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "E-commerce"
+      ]
+    },
+    {
+      "id": "024",
+      "slug": "rootscience",
+      "title": {
+        "ru": "Root Science — интернет-магазин косметики на WooCommerce",
+        "en": "Root Science — WooCommerce skincare store"
+      },
+      "description": {
+        "ru": "Каталог по категориям и проблемам кожи, карточки с отзывами и скин-квиз — WooCommerce.",
+        "en": "Catalogue by category and skin concern, product pages with reviews and a skin quiz — WooCommerce."
+      },
+      "features": [],
+      "timeText": {
+        "ru": "2025",
+        "en": "2025"
+      },
+      "previewImage": "/static/portfolio/2025-rootscience/001.jpg",
+      "images": [
+        "/static/portfolio/2025-rootscience/001.jpg",
+        "/static/portfolio/2025-rootscience/002.jpg",
+        "/static/portfolio/2025-rootscience/003.jpg",
+        "/static/portfolio/2025-rootscience/004.jpg",
+        "/static/portfolio/2025-rootscience/005.jpg"
+      ],
+      "tags": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "E-commerce"
+      ],
+      "links": [
+        {
+          "title": "shoprootscience.com",
+          "href": "https://www.shoprootscience.com/"
+        }
+      ]
+    },
+    {
       "id": "001",
       "slug": "skladolog",
       "title": {
-        "ru": "«Складолог»",
-        "en": "Skladolog"
+        "ru": "Складолог — CRM для складского учёта",
+        "en": "Skladolog — inventory management CRM"
       },
       "description": {
-        "ru": "CRM-система для складского учёта",
-        "en": "Inventory management CRM"
+        "ru": "Модульная архитектура с нуля, таблицы на 10 000+ строк, E2E-тесты в CI и динамическая подгрузка модулей.",
+        "en": "Modular architecture from scratch, tables with 10,000+ rows, E2E tests in CI and dynamic module loading."
       },
       "features": [],
       "timeText": {
@@ -75,12 +174,12 @@
       "id": "002",
       "slug": "online-exhibitions",
       "title": {
-        "ru": "Онлайн-выставки для HoReCa, spa и банной индустрии",
-        "en": "Online exhibitions for the HORECA, spa and bath industry"
+        "ru": "Фабрика отелей — онлайн-выставки для HoReCa и spa",
+        "en": "Fabrika Oteley — HORECA, spa and bath exhibitions"
       },
       "description": {
-        "ru": "Реализовал большую часть клиентской части приложения на Quasar (Vue 3 + SSR).",
-        "en": "Built most of the client side of the application with the Quasar framework (Vue 3 + SSR)."
+        "ru": "Большая часть клиентской части: SSR для SEO, фильтры до 50 параметров, TTFB −60% за счёт кеширования на Nginx.",
+        "en": "Most of the client side: SSR for SEO, up to 50 filters at once, 60% lower TTFB thanks to Nginx caching."
       },
       "features": [],
       "timeText": {
@@ -107,12 +206,12 @@
       "id": "003",
       "slug": "crm",
       "title": {
-        "ru": "CRM-система для управления клиентами",
-        "en": "CRM system for customer management"
+        "ru": "CRM для B2B-услуг — управление клиентами",
+        "en": "CRM for B2B services — customer management"
       },
       "description": {
-        "ru": "Реализовал всю клиентскую часть приложения на Quasar (Vue 3).",
-        "en": "Built the entire client side of the application with the Quasar framework (Vue 3)."
+        "ru": "Крупные модули с нуля: структура данных, интерфейс и интеграция с API в команде B2B-продукта.",
+        "en": "Large modules built from scratch: data structures, UI and API integration in a B2B product team."
       },
       "features": [],
       "timeText": {
@@ -140,12 +239,12 @@
       "id": "004",
       "slug": "crm-chat",
       "title": {
-        "ru": "Чат для CRM-системы",
-        "en": "Chat for a CRM system"
+        "ru": "Чат-виджет для CRM — живые сообщения и история",
+        "en": "CRM chat widget — live messaging and history"
       },
       "description": {
-        "ru": "Полнофункциональный чат для CRM-системы.",
-        "en": "Full-featured chat for a CRM."
+        "ru": "WebSocket-виджет с историей переписки; встроен в работающую CRM за 2 недели без даунтайма.",
+        "en": "WebSocket widget with message history; integrated into a live CRM in two weeks with no downtime."
       },
       "features": [],
       "timeText": {
@@ -172,12 +271,12 @@
       "id": "006",
       "slug": "corgi-extension",
       "title": {
-        "ru": "«Corgi» — расширение для изучения слов",
-        "en": "Corgi — vocabulary learning extension"
+        "ru": "Corgi — расширение для изучения иностранных слов",
+        "en": "Corgi — foreign vocabulary learning extension"
       },
       "description": {
-        "ru": "Браузерное расширение, которое помогает учить иностранные слова во время серфинга.",
-        "en": "Browser extension that helps you learn foreign words while browsing the web."
+        "ru": "Учит слова во время серфинга: контекстные подсказки и озвучка; легаси-JS переписан на React + TypeScript, активность +30%.",
+        "en": "Teaches words while you browse: context hints and speech; legacy JS rewritten in React + TypeScript, activity up 30%."
       },
       "features": [],
       "timeText": {
@@ -213,12 +312,12 @@
       "id": "007",
       "slug": "web-service-ads-telegram",
       "title": {
-        "ru": "Сервис управления рекламой в Telegram",
-        "en": "Telegram ad management service"
+        "ru": "Сервис управления рекламой в Telegram-каналах",
+        "en": "Telegram channel ad management service"
       },
       "description": {
-        "ru": "Админ-панель для управления рекламными кампаниями в Telegram-каналах.",
-        "en": "Admin panel for managing ad campaigns in Telegram channels."
+        "ru": "Админ-панель для рекламных кампаний: размещения в каналах и управление ими из одного интерфейса.",
+        "en": "Admin panel for ad campaigns: channel placements managed from a single interface."
       },
       "features": [],
       "timeText": {
@@ -245,12 +344,12 @@
       "id": "008",
       "slug": "bitcoin-exchange-service",
       "title": {
-        "ru": "Сервис обмена валют и криптовалют",
-        "en": "Currency and cryptocurrency exchange service"
+        "ru": "Обмен валют и криптовалют — онлайн-сервис",
+        "en": "Currency and crypto exchange service"
       },
       "description": {
-        "ru": "Онлайн-сервис обмена валют и криптовалют с автоматическим расчётом суммы.",
-        "en": "Online service for exchanging currencies and cryptocurrencies with automatic amount calculation."
+        "ru": "Обмен с автоматическим расчётом суммы по актуальным курсам и понятным интерфейсом.",
+        "en": "Exchange with automatic amount calculation at live rates and a clear interface."
       },
       "features": [
         {
@@ -290,11 +389,11 @@
       "slug": "joxi-browser-extension",
       "title": {
         "ru": "Joxi — расширение для скриншотов",
-        "en": "Joxi — screenshot browser extension"
+        "en": "Joxi — screenshot extension"
       },
       "description": {
-        "ru": "Браузерное расширение для создания и редактирования скриншотов с сохранением в облако.",
-        "en": "Browser extension for creating and editing screenshots with cloud storage."
+        "ru": "Редизайн для Chrome, Firefox и Opera: создание и редактирование скриншотов, сохранение в облако и на диск.",
+        "en": "Redesign for Chrome, Firefox and Opera: create and edit screenshots, save to cloud and disk."
       },
       "features": [
         {
@@ -344,8 +443,8 @@
         "en": "Infinity Resources — workforce management platform"
       },
       "description": {
-        "ru": "Workforce management platform: доработка функций и исправление багов.",
-        "en": "Workforce management platform: feature development and bug fixing."
+        "ru": "Развитие workforce management-платформы: новые функции, адаптивность и интерактивность ключевых экранов.",
+        "en": "Workforce management platform development: new features, responsive and interactive key screens."
       },
       "features": [
         {
@@ -382,12 +481,12 @@
       "id": "011",
       "slug": "cashback-browser-extension",
       "title": {
-        "ru": "Кэшбэк-расширение для браузеров",
-        "en": "Cashback extension for browsers"
+        "ru": "Кэшбэк-расширение с купонами",
+        "en": "Cashback extension with coupons"
       },
       "description": {
-        "ru": "Расширение для Chrome и Firefox: кэшбэк и купоны на партнёрских сайтах.",
-        "en": "Chrome and Firefox extension: cashback and coupons on partner sites."
+        "ru": "Кэшбэк и купоны на партнёрских сайтах, push-уведомления, попап со списком магазинов и авторизация.",
+        "en": "Cashback and coupons on partner sites, push notifications, a popup with partner stores and sign-in."
       },
       "features": [
         {
@@ -432,12 +531,12 @@
       "id": "012",
       "slug": "disallow-ads-vk-com",
       "title": {
-        "ru": "Отключение рекламы во ВКонтакте",
-        "en": "Disallow ads on VK"
+        "ru": "Скрытие рекламы во ВКонтакте — расширение для Chrome",
+        "en": "VK ad blocker — Chrome extension"
       },
       "description": {
-        "ru": "Расширение для Chrome, которое скрывает рекламные баннеры, посты и аудиорекламу в VK.",
-        "en": "Chrome extension that hides ad banners, promoted posts and audio ads on VK."
+        "ru": "Убирает рекламные баннеры, промо-посты и аудиорекламу в ленте ВКонтакте.",
+        "en": "Removes ad banners, promoted posts and audio ads from the VK feed."
       },
       "features": [
         {
@@ -472,12 +571,12 @@
       "id": "013",
       "slug": "child-products-statistics",
       "title": {
-        "ru": "Статистика детских товаров",
-        "en": "Children's goods statistics"
+        "ru": "Детские товары — интерактивная статистика",
+        "en": "Children's goods — interactive statistics"
       },
       "description": {
-        "ru": "Сайт со статистикой детских товаров: интерактивные графики и срезы по категориям.",
-        "en": "Statistics website for children's goods with interactive charts and category breakdowns."
+        "ru": "Дашборд с наглядными графиками и фильтрацией по категориям; демо доступно онлайн.",
+        "en": "Dashboard with clear charts and category filtering; live demo available."
       },
       "features": [
         {
@@ -528,12 +627,12 @@
       "id": "014",
       "slug": "vbarkasov-portfolio-site",
       "title": {
-        "ru": "Сайт-портфолио",
-        "en": "Portfolio website"
+        "ru": "Портфолио-сайт на Vue 2",
+        "en": "Portfolio website on Vue 2"
       },
       "description": {
-        "ru": "Портфолио веб-разработчика: галерея проектов и резюме.",
-        "en": "Web developer portfolio: project gallery and resume."
+        "ru": "SPA-портфолио с галереей проектов на Vue 2 и Vuex; исходный код открыт на GitHub.",
+        "en": "SPA portfolio with a project gallery on Vue 2 and Vuex; source code open on GitHub."
       },
       "features": [
         {
@@ -588,12 +687,12 @@
       "id": "015",
       "slug": "monster-ui-addressbooks",
       "title": {
-        "ru": "Address Books для Monster UI",
-        "en": "Address Books for Monster UI"
+        "ru": "Monster UI — адресные книги для VoIP-клиента",
+        "en": "Monster UI — address books for a VoIP client"
       },
       "description": {
-        "ru": "SIP-приложение с адресными книгами для фреймворка Monster UI.",
-        "en": "SIP application with address books for the Monster UI framework."
+        "ru": "Адресные книги в SIP-приложении Monster UI; работа в команде 10+ человек над WebRTC-клиентом.",
+        "en": "Address books in the Monster UI SIP application; part of a 10+ person team building a WebRTC client."
       },
       "features": [
         {
@@ -619,12 +718,12 @@
       "id": "016",
       "slug": "kinopoisk-torrent-search",
       "title": {
-        "ru": "Поиск торрентов на Кинопоиске",
-        "en": "Kinopoisk torrent search"
+        "ru": "Kinopoisk Torrent Search — поиск раздач",
+        "en": "Kinopoisk Torrent Search — torrent finder"
       },
       "description": {
-        "ru": "Расширение добавляет кнопку поиска торрентов рядом с названием фильма на kinopoisk.ru.",
-        "en": "The extension adds a torrent search button next to a movie title on kinopoisk.ru."
+        "ru": "Добавляет кнопку поиска торрентов к названию фильма на kinopoisk.ru; опубликовано в Chrome Web Store.",
+        "en": "Adds a torrent search button next to movie titles on kinopoisk.ru; published in the Chrome Web Store."
       },
       "features": [
         {
@@ -668,12 +767,12 @@
       "id": "017",
       "slug": "bitcoin-browser-extension",
       "title": {
-        "ru": "Bitcoin-расширение для браузера",
-        "en": "Bitcoin browser extension"
+        "ru": "Bitcoin-расширение — курс, график и калькулятор",
+        "en": "Bitcoin extension — rate, chart and calculator"
       },
       "description": {
-        "ru": "Расширение для Chrome и Firefox: курс биткоина, график и калькулятор валют.",
-        "en": "Chrome and Firefox extension: Bitcoin rate, chart and currency calculator."
+        "ru": "Курс биткоина в 20 валютах на иконке, график за выбранный период и калькулятор валют.",
+        "en": "Bitcoin rate in 20 currencies on the icon, a chart for the selected period and a currency calculator."
       },
       "features": [
         {
@@ -710,12 +809,12 @@
       "id": "018",
       "slug": "alfa-bank-jbzoo-payment-module",
       "title": {
-        "ru": "Модуль оплаты Alfa Bank для Joomla 3",
-        "en": "Alfa Bank payment module for Joomla 3"
+        "ru": "Платёжный модуль Альфа-Банка для JBZoo",
+        "en": "Alfa-Bank payment module for JBZoo"
       },
       "description": {
-        "ru": "Платёжный модуль для компонента JBZoo в CMS Joomla 3.",
-        "en": "Payment module for the JBZoo component in Joomla 3."
+        "ru": "Онлайн-оплата в магазине на Joomla 3: интеграция с Альфа-Банком и настройка в JBZoo.",
+        "en": "Online payments for a Joomla 3 store: Alfa-Bank integration and configuration in JBZoo."
       },
       "features": [
         {
@@ -743,12 +842,12 @@
       "id": "019",
       "slug": "admin-interface-ecommerce-site",
       "title": {
-        "ru": "Админ-интерфейс интернет-магазина",
-        "en": "Admin interface for an e-commerce site"
+        "ru": "Админка интернет-магазина — управление заказами",
+        "en": "E-commerce admin — order management"
       },
       "description": {
-        "ru": "Кастомный интерфейс управления заказами для интернет-магазина.",
-        "en": "Custom order management interface for an e-commerce site."
+        "ru": "Кастомный интерфейс на Yii2: двухколоночная раскладка, вкладки заказов, расчёт итоговой суммы.",
+        "en": "Custom Yii2 interface: two-column layout, order tabs and order total calculation."
       },
       "features": [
         {
@@ -783,12 +882,12 @@
       "id": "020",
       "slug": "change-design-ecommerce-site-ocean-krasoty",
       "title": {
-        "ru": "Редизайн интернет-магазина Ocean Krasoty",
-        "en": "Redesign of the Ocean Krasoty online store"
+        "ru": "Ocean Krasoty — редизайн интернет-магазина косметики",
+        "en": "Ocean Krasoty — cosmetics store redesign"
       },
       "description": {
-        "ru": "Обновление дизайна интернет-магазина косметики.",
-        "en": "Design refresh for a cosmetics online store."
+        "ru": "Новый дизайн магазина на Netcat: каталог и карточка товара.",
+        "en": "New store design on Netcat: catalogue and product page."
       },
       "features": [],
       "timeText": {

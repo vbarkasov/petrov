@@ -23,7 +23,6 @@ export interface UI {
     experience: string;
     education: string;
     contacts: string;
-    links: string;
     competencies: string;
     stack: string;
   };

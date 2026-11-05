@@ -368,23 +368,5 @@
     "Качество на всех этапах: тесты параллельно с кодом, E2E критичных сценариев, код-ревью по чек-листам.",
     "Разгрузка лида: беру техническое руководство направлением, распределение задач и менторство младших разработчиков.",
     "AI в процессе: Claude Code, Cursor и Copilot для рефакторинга, тестов и документации."
-  ],
-  "links": [
-    {
-      "label": "GitHub — исходники проектов",
-      "url": "https://github.com/vbarkasov"
-    },
-    {
-      "label": "Chrome Web Store — Kinopoisk Torrent Search",
-      "url": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld"
-    },
-    {
-      "label": "Демо — Child Products Statistics",
-      "url": "http://childproducts.vbarkasov.com/#/research-result"
-    },
-    {
-      "label": "Исходники портфолио — vbarkasov-portfolio-vue",
-      "url": "https://github.com/vbarkasov/vbarkasov-portfolio-vue"
-    }
   ]
 }

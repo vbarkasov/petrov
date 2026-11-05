@@ -26,7 +26,6 @@ export const ru: UI = {
     experience: 'Опыт работы',
     education: 'Образование',
     contacts: 'Контакты',
-    links: 'Ссылки и проекты',
     competencies: 'Ключевые компетенции',
     stack: 'Технический стек',
   },

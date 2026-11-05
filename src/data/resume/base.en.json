@@ -368,23 +368,5 @@
     "Quality at every stage: tests alongside the code, E2E for critical flows, checklist-based code review.",
     "Taking load off the lead: I own technical leadership of a direction, task distribution and mentoring of junior developers.",
     "AI in the workflow: Claude Code, Cursor and Copilot for refactoring, tests and documentation."
-  ],
-  "links": [
-    {
-      "label": "GitHub — project sources",
-      "url": "https://github.com/vbarkasov"
-    },
-    {
-      "label": "Chrome Web Store — Kinopoisk Torrent Search",
-      "url": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld"
-    },
-    {
-      "label": "Live demo — Child Products Statistics",
-      "url": "http://childproducts.vbarkasov.com/#/research-result"
-    },
-    {
-      "label": "Portfolio source code — vbarkasov-portfolio-vue",
-      "url": "https://github.com/vbarkasov/vbarkasov-portfolio-vue"
-    }
   ]
 }
