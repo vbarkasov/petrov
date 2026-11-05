@@ -168,6 +168,12 @@
         "Vite",
         "Playwright",
         "CRM"
+      ],
+      "links": [
+        {
+          "title": "lk.skladolog.ru",
+          "href": "https://lk.skladolog.ru/"
+        }
       ]
     },
     {
