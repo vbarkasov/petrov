@@ -42,6 +42,8 @@ export interface UI {
     highlights: string;
     openResume: string;
     openPortfolio: string;
+    showAllTags: string;
+    tags: string;
     close: string;
     previous: string;
     next: string;

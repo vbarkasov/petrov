@@ -45,6 +45,8 @@ export const ru: UI = {
     highlights: 'Ключевые результаты',
     openResume: 'Открыть резюме',
     openPortfolio: 'открыть в портфолио',
+    showAllTags: 'Показать все теги',
+    tags: 'Теги',
     close: 'Закрыть',
     previous: 'Предыдущее изображение',
     next: 'Следующее изображение',

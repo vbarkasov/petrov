@@ -45,6 +45,8 @@ export const en: UI = {
     highlights: 'Key results',
     openResume: 'Open resume',
     openPortfolio: 'open in portfolio',
+    showAllTags: 'Show all tags',
+    tags: 'Tags',
     close: 'Close',
     previous: 'Previous image',
     next: 'Next image',

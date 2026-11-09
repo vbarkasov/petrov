@@ -18,21 +18,24 @@ const images = (item.images ?? []).map((src) => withBase(src));
 const features = item.features.map((f) => f[locale]);
 const tags = item.tags ?? [];
 const visibleTags = tags.slice(0, 3);
-const hiddenTags = tags.length - visibleTags.length;
+const hiddenTags = tags.slice(3);
 ---
 
 <article
-  class="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:border-slate-800 dark:bg-slate-900/60 dark:hover:border-emerald-700"
-  role="button"
-  tabindex="0"
-  aria-label={`${title} — ${ui.labels.openPortfolio}`}
-  data-portfolio-item
-  data-title={title}
-  data-description={description}
-  data-images={JSON.stringify(images)}
-  data-features={JSON.stringify(features)}
-  data-links={JSON.stringify(item.links ?? [])}
+  class="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md dark:border-slate-800 dark:bg-slate-900/60 dark:hover:border-emerald-700"
 >
+  <button
+    type="button"
+    class="absolute inset-0 z-10 cursor-pointer rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-emerald-500"
+    aria-label={`${title} — ${ui.labels.openPortfolio}`}
+    data-portfolio-item
+    data-title={title}
+    data-description={description}
+    data-images={JSON.stringify(images)}
+    data-features={JSON.stringify(features)}
+    data-links={JSON.stringify(item.links ?? [])}
+    data-tags={JSON.stringify(tags)}
+  ></button>
   <div class="bg-slate-100 dark:bg-slate-950">
     {preview ? (
       <img
@@ -51,16 +54,32 @@ const hiddenTags = tags.length - visibleTags.length;
     {item.timeText && (
       <div class="mt-auto flex items-end justify-between gap-3 pt-3">
         <p class="font-mono text-xs text-slate-500 dark:text-slate-400">{item.timeText[locale]}</p>
-        {visibleTags.length > 0 && (
-          <ul class="ml-auto flex flex-wrap justify-end gap-1">
+        {tags.length > 0 && (
+          <ul class="pointer-events-none relative z-20 ml-auto flex flex-wrap justify-end gap-1">
             {visibleTags.map((tag) => (
               <li class="rounded-full border border-slate-200 px-2 py-0.5 text-[10px] leading-4 text-slate-500 dark:border-slate-700 dark:text-slate-400">
                 {tag}
               </li>
             ))}
-            {hiddenTags > 0 && (
-              <li class="rounded-full border border-dashed border-slate-200 px-2 py-0.5 text-[10px] leading-4 text-slate-500 dark:border-slate-700 dark:text-slate-400">
-                +{hiddenTags}
+            {hiddenTags.map((tag) => (
+              <li
+                hidden
+                data-tag-hidden
+                class="rounded-full border border-slate-200 px-2 py-0.5 text-[10px] leading-4 text-slate-500 dark:border-slate-700 dark:text-slate-400"
+              >
+                {tag}
+              </li>
+            ))}
+            {hiddenTags.length > 0 && (
+              <li>
+                <button
+                  type="button"
+                  data-tags-toggle
+                  aria-label={ui.labels.showAllTags}
+                  class="pointer-events-auto cursor-pointer rounded-full border border-dashed border-slate-200 px-2 py-0.5 text-[10px] leading-4 text-slate-500 transition hover:border-emerald-400 hover:text-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:border-slate-700 dark:text-slate-400 dark:hover:border-emerald-500 dark:hover:text-emerald-400"
+                >
+                  +{hiddenTags.length}
+                </button>
               </li>
             )}
           </ul>
@@ -69,3 +88,17 @@ const hiddenTags = tags.length - visibleTags.length;
     )}
   </div>
 </article>
+
+<script>
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const button = target.closest('[data-tags-toggle]');
+    if (!button) return;
+    event.stopPropagation();
+    const card = button.closest('article');
+    if (!card) return;
+    card.querySelectorAll('[data-tag-hidden]').forEach((tag) => tag.removeAttribute('hidden'));
+    button.remove();
+  });
+</script>

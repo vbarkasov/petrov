@@ -49,6 +49,12 @@ const navButton =
         id="portfolio-modal-description"
         class="max-h-[25vh] overflow-y-auto text-sm text-slate-600 dark:text-slate-400"
       ></p>
+      <ul
+        id="portfolio-modal-tags"
+        class="mt-3 flex flex-wrap gap-1"
+        aria-label={ui.labels.tags}
+        hidden
+      ></ul>
       <div id="portfolio-modal-links" class="mt-3 flex flex-wrap gap-2" hidden></div>
     </footer>
   </div>
@@ -61,6 +67,7 @@ const navButton =
     const img = document.getElementById('portfolio-modal-image');
     const title = document.getElementById('portfolio-modal-title');
     const desc = document.getElementById('portfolio-modal-description');
+    const tags = document.getElementById('portfolio-modal-tags');
     const links = document.getElementById('portfolio-modal-links');
     const closeBtn = document.getElementById('portfolio-modal-close');
     const prevBtn = document.getElementById('portfolio-modal-prev');
@@ -79,6 +86,15 @@ const navButton =
     function open(data) {
       title.textContent = data.title || '';
       desc.textContent = data.description || '';
+      tags.replaceChildren();
+      (data.tags || []).forEach((tag) => {
+        const li = document.createElement('li');
+        li.textContent = tag;
+        li.className =
+          'rounded-full border border-slate-200 px-2 py-0.5 text-[10px] leading-4 text-slate-500 dark:border-slate-700 dark:text-slate-400';
+        tags.append(li);
+      });
+      tags.hidden = tags.childElementCount === 0;
       links.replaceChildren();
       (data.links || []).forEach((link) => {
         const a = document.createElement('a');
@@ -106,15 +122,18 @@ const navButton =
         description: card.dataset.description,
         images: JSON.parse(card.dataset.images || '[]'),
         links: JSON.parse(card.dataset.links || '[]'),
+        tags: JSON.parse(card.dataset.tags || '[]'),
       });
     }
     document.addEventListener('click', (e) => {
+      if (e.target.closest('[data-tags-toggle]')) return;
       const card = e.target.closest('[data-portfolio-item]');
       if (card) openFromCard(card);
     });
     document.addEventListener('keydown', (e) => {
       if (modal.open) return;
       if (e.key !== 'Enter' && e.key !== ' ') return;
+      if (e.target.closest('[data-tags-toggle]')) return;
       const card = e.target.closest('[data-portfolio-item]');
       if (!card) return;
       e.preventDefault();
