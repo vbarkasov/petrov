@@ -2,6 +2,63 @@
   "schemaVersion": 1,
   "items": [
     {
+      "id": "025",
+      "slug": "flower-erp",
+      "title": {
+        "ru": "ERP для оптовой торговли цветами",
+        "en": "Wholesale flower trade ERP"
+      },
+      "description": {
+        "ru": "Учёт заказов, клиентов и складских партий: сборка с drag&drop, контроль сроков годности, дашборды и аналитика продаж.",
+        "en": "Orders, clients and warehouse batches: drag&drop picking, expiry control, dashboards and sales analytics."
+      },
+      "features": [
+        {
+          "ru": "Сортировка позиций заказа через drag&drop",
+          "en": "Drag&drop order line sorting"
+        },
+        {
+          "ru": "Складской учёт партий и сроков годности",
+          "en": "Batch and expiry date tracking"
+        },
+        {
+          "ru": "Дашборд с KPI и графиками продаж",
+          "en": "KPI dashboard with sales charts"
+        },
+        {
+          "ru": "Аналитика по клиентам и категориям",
+          "en": "Client and category analytics"
+        },
+        {
+          "ru": "Адаптивный интерфейс на Ant Design",
+          "en": "Responsive Ant Design UI"
+        }
+      ],
+      "timeText": {
+        "ru": "2026",
+        "en": "2026"
+      },
+      "previewImage": "/static/portfolio/2026-flower-erp/001.png",
+      "images": [
+        "/static/portfolio/2026-flower-erp/001.png",
+        "/static/portfolio/2026-flower-erp/002.png",
+        "/static/portfolio/2026-flower-erp/003.png",
+        "/static/portfolio/2026-flower-erp/004.png",
+        "/static/portfolio/2026-flower-erp/005.png"
+      ],
+      "tags": [
+        "React",
+        "TypeScript",
+        "Ant Design",
+        "Zustand",
+        "dnd-kit",
+        "React Router",
+        "Vite",
+        "SCSS",
+        "ERP"
+      ]
+    },
+    {
       "id": "021",
       "slug": "samotsvet",
       "title": {
