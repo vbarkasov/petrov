@@ -2,6 +2,42 @@
   "schemaVersion": 1,
   "items": [
     {
+      "id": "026",
+      "slug": "services-marketplace",
+      "title": {
+        "ru": "Маркетплейс услуг",
+        "en": "Services marketplace"
+      },
+      "description": {
+        "ru": "Клиентская часть маркетплейса услуг: интерфейс по макетам Figma, работа с данными через GraphQL и управление серверным состоянием.",
+        "en": "Client-side of a services marketplace: UI built from Figma designs, GraphQL data layer with managed server state."
+      },
+      "features": [],
+      "timeText": {
+        "ru": "2026",
+        "en": "2026"
+      },
+      "previewImage": "/static/portfolio/2026-services-marketplace/001.png",
+      "images": [
+        "/static/portfolio/2026-services-marketplace/001.png",
+        "/static/portfolio/2026-services-marketplace/002.png",
+        "/static/portfolio/2026-services-marketplace/003.png",
+        "/static/portfolio/2026-services-marketplace/004.png",
+        "/static/portfolio/2026-services-marketplace/005.png",
+        "/static/portfolio/2026-services-marketplace/006.png"
+      ],
+      "tags": [
+        "Nuxt 4",
+        "Vue 3",
+        "TypeScript",
+        "TanStack Vue Query",
+        "VueUse",
+        "GraphQL",
+        "SCSS",
+        "Figma"
+      ]
+    },
+    {
       "id": "025",
       "slug": "flower-erp",
       "title": {
